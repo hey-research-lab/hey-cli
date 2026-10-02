@@ -1,0 +1,97 @@
+{
+  "request": {
+    "path": "/api/evidence/ship%3A4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
+    "params": {}
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-request-id": "f5a094fc-8057-4ad8-abeb-95bc1f73f9a6",
+      "x-hey-api-version": "1"
+    },
+    "body": {
+      "id": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
+      "withdrawn": false,
+      "project": {
+        "slug": "musepass-musepass",
+        "name": "musepass",
+        "url": "https://heyresearch.xyz/project/musepass-musepass"
+      },
+      "domain": "build",
+      "claimType": "CODE_ACTIVITY",
+      "summary": "Active development: 122 commits in the last 90 days across 1 contributor",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/musepass/musepass",
+      "publishedAt": "2026-10-02T10:58:47.000Z",
+      "detectedAt": "2026-10-01T00:16:50.907Z",
+      "precision": "WEEK",
+      "window": {
+        "isoWeek": "2026-W40",
+        "start": "2026-09-28T00:00:00.000Z",
+        "end": "2026-10-05T00:00:00.000Z",
+        "firstDay": "2026-09-28",
+        "lastDay": "2026-10-04",
+        "sourceUrl": "https://github.com/musepass/musepass/commits?since=2026-09-28T00%3A00%3A00.000Z&until=2026-10-05T00%3A00%3A00.000Z"
+      },
+      "codeWeek": {
+        "isoWeek": "2026-w40",
+        "start": "2026-09-28T00:00:00.000Z",
+        "end": "2026-10-05T00:00:00.000Z",
+        "repository": "musepass/musepass",
+        "commits": 222,
+        "commitsAtLeast": false,
+        "commitsUrl": "https://github.com/musepass/musepass/commits?since=2026-09-28T00%3A00%3A00.000Z&until=2026-10-05T00%3A00%3A00.000Z",
+        "highlights": [
+          {
+            "subject": "Let an agent with its own wallet register a name by itself",
+            "sha": "01921565a47434d5f768af1990b57851ca055d30",
+            "committedAt": "2026-09-30T04:48:02.000Z",
+            "readAsCode": true,
+            "url": "https://github.com/musepass/musepass/commit/01921565a47434d5f768af1990b57851ca055d30"
+          },
+          {
+            "subject": "Deploy the API and the MCP server alongside the gateway",
+            "sha": "00c88bd3d9c94af9018424031352cce87cf60ec8",
+            "committedAt": "2026-09-29T03:52:56.000Z",
+            "readAsCode": true,
+            "url": "https://github.com/musepass/musepass/commit/00c88bd3d9c94af9018424031352cce87cf60ec8"
+          },
+          {
+            "subject": "NFT metadata: tokenURI now serves the passport image",
+            "sha": "893a1403925feac7a030e22d14f8bcee084ba7f9",
+            "committedAt": "2026-10-02T10:58:47.000Z",
+            "readAsCode": false,
+            "url": "https://github.com/musepass/musepass/commit/893a1403925feac7a030e22d14f8bcee084ba7f9"
+          }
+        ],
+        "title": "Code changes, week of 2026-09-28 – 2026-10-04 · 222 commits"
+      },
+      "verification": "SOURCE_LINKED",
+      "countsAsBuilding": true,
+      "recordedAt": "2026-10-01T00:16:50.907Z",
+      "metadata": {
+        "summary": "5 active day(s) in musepass/musepass.",
+        "prerelease": false
+      },
+      "sources": [
+        {
+          "evidenceRowId": "9a63c224-f71e-4102-b115-ec3d44cd2b9e",
+          "sourceType": "GITHUB_REPO",
+          "sourceUrl": "https://github.com/musepass/musepass",
+          "observedAt": "2026-10-01T00:16:50.907Z",
+          "metadata": {
+            "truncated": false,
+            "windowEnd": "2026-10-02T11:14:01.681Z",
+            "activeDays": 5,
+            "commitCount": 122,
+            "windowStart": "2026-07-04T11:14:01.681Z",
+            "weekFullyListed": true,
+            "contributorCount": 1
+          }
+        }
+      ],
+      "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown — it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."
+    }
+  }
+}

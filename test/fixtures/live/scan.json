@@ -1,0 +1,55 @@
+{
+  "request": {
+    "path": "/api/v1/scan",
+    "params": {
+      "chain": 4663,
+      "token": "0x7e7154eb9dd81084625a7a2e9e731cadfddb9ab7"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-request-id": "0f8413b6-a6d8-46c1-9cd6-db3697b7998f",
+      "x-hey-api-version": "1"
+    },
+    "body": {
+      "found": true,
+      "chainId": 4663,
+      "contractAddress": "0x7e7154eb9dd81084625a7a2e9e731cadfddb9ab7",
+      "status": "shipping",
+      "status_label": "Shipping",
+      "status_help": "Shipped something meaningful in the last 7 days.",
+      "verified_builder": true,
+      "token_verification": "UNVERIFIED",
+      "activity_applies_to_token": true,
+      "research_level": "VERIFIED_BUILDER",
+      "activity_measured": true,
+      "coverage": "measured",
+      "as_of": "2026-10-02T10:48:46.241Z",
+      "activity": {
+        "commits_30d": 86,
+        "releases_30d": 0,
+        "ships_30d": 2,
+        "meaningful_ships_30d": 2,
+        "last_ship": "2026-10-02",
+        "last_ship_title": "Active development: 86 commits in the last 90 days across 1 contributor",
+        "last_ship_url": "https://github.com/priors-agents/priors"
+      },
+      "project": {
+        "slug": "priors-agents",
+        "name": "Priors Agents",
+        "symbol": "PRIORS"
+      },
+      "project_url": "https://heyresearch.xyz/project/priors-agents",
+      "project_link": "https://heyresearch.xyz/project/priors-agents?utm_source=hey_api&utm_medium=partner_api&utm_campaign=scan_card",
+      "logo_url": "https://heyresearch.xyz/api/logo?u=https%3A%2F%2Fcdn.dexscreener.com%2Fcms%2Fimages%2Fok_csxBkS9qtiMzl%3Fwidth%3D64%26height%3D64%26fit%3Dcrop%26quality%3D95%26format%3Dauto&s=128",
+      "badge_url": "https://heyresearch.xyz/badge/priors-agents.svg",
+      "cta": {
+        "label": "See the builder on HEY",
+        "url": "https://heyresearch.xyz/project/priors-agents"
+      },
+      "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown — it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."
+    }
+  }
+}

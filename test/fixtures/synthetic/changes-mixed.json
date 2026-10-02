@@ -1,0 +1,71 @@
+{
+  "_note": "Synthetic: hand-written to exercise a path the live API cannot be asked for politely. Shapes follow docs/PUBLIC_API.",
+  "request": {
+    "path": "/api/changes",
+    "params": {
+      "project": "example-project"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-hey-api-version": "1"
+    },
+    "body": {
+      "query": {
+        "project": "example-project",
+        "mode": "browse",
+        "limit": 50
+      },
+      "items": [
+        {
+          "id": "state:00000000-0000-4000-8000-0000000000aa:activity:1",
+          "revision": 1,
+          "op": "upsert",
+          "type": "build.status_changed",
+          "domain": "build",
+          "origin": "live",
+          "project": {
+            "slug": "example-project",
+            "name": "Example Project",
+            "url": "https://heyresearch.xyz/project/example-project"
+          },
+          "occurredAt": null,
+          "precision": "OBSERVED",
+          "detectedAt": "2026-10-01T08:00:00.000Z",
+          "recordedAt": "2026-10-01T08:05:00.000Z",
+          "summary": "Activity status moved",
+          "before": "SHIPPING",
+          "after": "ACTIVE",
+          "evidence": [
+            {
+              "id": "state:00000000-0000-4000-8000-0000000000aa:activity:1",
+              "label": "HEY"
+            }
+          ],
+          "source": "hey",
+          "links": {
+            "project": "https://heyresearch.xyz/project/example-project",
+            "timeline": "https://heyresearch.xyz/api/projects/example-project/timeline"
+          }
+        },
+        {
+          "id": "ship:00000000-0000-4000-8000-000000000003",
+          "revision": 2,
+          "op": "retract",
+          "recordedAt": "2026-09-30T08:05:00.000Z"
+        }
+      ],
+      "nextCursor": null,
+      "hasMore": false,
+      "ledger": {
+        "collectionStart": "2026-09-26T11:35:57.227Z",
+        "transitionsFrom": null,
+        "newestRecordedAt": null,
+        "projectorRanAt": null
+      },
+      "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown \u2014 it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."
+    }
+  }
+}

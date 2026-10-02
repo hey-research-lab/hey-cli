@@ -1,0 +1,26 @@
+{
+  "_note": "Synthetic: hand-written to exercise a path the live API cannot be asked for politely. Shapes follow docs/PUBLIC_API.",
+  "request": {
+    "path": "/api/projects/example-project",
+    "params": {}
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-hey-api-version": "1"
+    },
+    "body": {
+      "slug": "example-project",
+      "name": "Evil\u001b[31mRed\u001b[0m\u202eName",
+      "shortDescription": "line one\nline two\u0007",
+      "activityStatus": "ACTIVE",
+      "researchLevel": "INDEXED",
+      "catalogStatus": "INDEXED",
+      "projectKind": "OTHER",
+      "stillBuilding": false,
+      "url": "https://heyresearch.xyz/project/example-project",
+      "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown \u2014 it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."
+    }
+  }
+}

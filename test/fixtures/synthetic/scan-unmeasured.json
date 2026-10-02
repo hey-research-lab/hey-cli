@@ -1,0 +1,43 @@
+{
+  "_note": "Synthetic: hand-written to exercise a path the live API cannot be asked for politely. Shapes follow docs/PUBLIC_API.",
+  "request": {
+    "path": "/api/v1/scan",
+    "params": {
+      "chain": 4663,
+      "token": "0x0000000000000000000000000000000000000002"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-hey-api-version": "1"
+    },
+    "body": {
+      "found": true,
+      "chainId": 4663,
+      "contractAddress": "0x0000000000000000000000000000000000000002",
+      "status": "unknown",
+      "status_label": "Unknown",
+      "status_help": "HEY has no builder source it can read for this project yet.",
+      "verified_builder": false,
+      "token_verification": "MISMATCH",
+      "activity_applies_to_token": false,
+      "research_level": "INDEXED",
+      "activity_measured": false,
+      "coverage": "no_source",
+      "activity": {
+        "releases_30d": 0,
+        "ships_30d": 0
+      },
+      "project": {
+        "slug": "example-project",
+        "name": "Example Project"
+      },
+      "project_url": "https://heyresearch.xyz/project/example-project",
+      "badge_url": "https://heyresearch.xyz/badge/example-project.svg",
+      "scan_url": "https://heyresearch.xyz/scan/0x0000000000000000000000000000000000000002",
+      "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown \u2014 it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."
+    }
+  }
+}

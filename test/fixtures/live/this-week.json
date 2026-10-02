@@ -1,0 +1,430 @@
+{
+  "request": {
+    "path": "/api/this-week",
+    "params": {}
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-request-id": "0d78d1ad-86cb-440a-83b9-5e5e5457dcdb",
+      "x-hey-api-version": "1"
+    },
+    "body": {
+      "window": {
+        "since": "2026-09-25T08:41:33.876Z",
+        "until": "2026-10-02T08:41:33.876Z",
+        "days": 7,
+        "label": "7 days to 2 Oct 2026"
+      },
+      "summary": "368 ships from 215 projects, 133 builders newly verified, 1 project back to shipping — 7 days to 2 Oct 2026.",
+      "shipped": {
+        "ships": 368,
+        "projects": 215,
+        "items": [
+          {
+            "project": {
+              "slug": "builder-one-chain-radar",
+              "name": "chain-radar",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-one-chain-radar"
+            },
+            "ships": 3,
+            "latest": {
+              "title": "insiemi ricostruibili",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-01T13:32:10.000Z",
+              "verification": "SOURCE_LINKED",
+              "sourceUrl": "https://github.com/builder-one/chain-radar/releases/tag/insiemi"
+            }
+          },
+          {
+            "project": {
+              "slug": "kybernetwork-kyberswap-dex-lib",
+              "name": "KyberNetwork",
+              "symbol": "INVERSE",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/kybernetwork-kyberswap-dex-lib"
+            },
+            "ships": 10,
+            "latest": {
+              "title": "v0.134.25",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-02T07:30:14.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/KyberNetwork/kyberswap-dex-lib/releases/tag/v0.134.25"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-five-strike",
+              "name": "Strike",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-five-strike"
+            },
+            "ships": 2,
+            "latest": {
+              "title": "v0.9.0",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-09-30T15:53:37.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-five/Strike/releases/tag/v0.9.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-eight-adexto-arbitrum",
+              "name": "builder-eight",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-eight-adexto-arbitrum"
+            },
+            "ships": 2,
+            "latest": {
+              "title": "v1.0.2 — Factory 0.12.0 on four mainnets, creator fee 0.70%, BUSL-1.1",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-09-29T01:03:46.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-eight/adexto/releases/tag/v1.0.2"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-four-loophole-tape",
+              "name": "loophole-tape",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-four-loophole-tape"
+            },
+            "ships": 3,
+            "latest": {
+              "title": "loopholetape-mcp 0.2.0",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-09-30T18:08:07.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-four/loophole-tape/releases/tag/mcp-v0.2.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "merrymen",
+              "name": "Merrymen",
+              "symbol": "MERRYMEN",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 518912,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/merrymen"
+            },
+            "ships": 3,
+            "latest": {
+              "title": "Android 0.2.0",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-09-26T11:36:15.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-nine/merrymen/releases/tag/android-v0.2.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "signaldesk-signal-sdk",
+              "name": "signal-sdk",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/signaldesk-signal-sdk"
+            },
+            "ships": 2,
+            "latest": {
+              "title": "v0.1.0",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-01T21:18:24.000Z",
+              "verification": "SOURCE_LINKED",
+              "sourceUrl": "https://github.com/signaldesk/signal-sdk/releases/tag/v0.1.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-six-hivemindos",
+              "name": "hivemindos",
+              "symbol": "hive",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-six-hivemindos"
+            },
+            "ships": 5,
+            "latest": {
+              "title": "v0.9.0",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-01T19:32:54.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-six/hivemindos/releases/tag/v0.9.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "agentos",
+              "name": "AgentOS",
+              "symbol": "AgentOS",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/agentos"
+            },
+            "ships": 7,
+            "latest": {
+              "title": "AgentOS 2026.10.1.post1",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-01T17:03:50.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/use-agent-os/agent-os/releases/tag/v2026.10.1.post1"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-seven-cargoflow",
+              "name": "CargoFlow",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-seven-cargoflow"
+            },
+            "ships": 2,
+            "latest": {
+              "title": "v0.8.0: testnet prototype",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-01T12:45:34.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-seven/CargoFlow/releases/tag/v0.8.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "pumptao",
+              "name": "pumpTAO",
+              "symbol": "TAOPMP",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 3330,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/pumptao"
+            },
+            "ships": 2,
+            "latest": {
+              "title": "v0.1.0 — Native TAO launchpad developer preview",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-01T07:54:38.000Z",
+              "verification": "SOURCE_LINKED",
+              "sourceUrl": "https://github.com/pumpTAO/launchpad-core/releases/tag/v0.1.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "verge-snowy-x402",
+              "name": "Verge Snowy x402",
+              "symbol": "VERGE402",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 19220,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/verge-snowy-x402"
+            },
+            "ships": 3,
+            "latest": {
+              "title": "v1.2.0 — ZK batch proofs + standalone facilitator binary",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-09-27T19:05:54.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/vergex402/verge/releases/tag/v1.2.0"
+            }
+          }
+        ],
+        "rule": {
+          "id": "weekly-ships-v4",
+          "counts": "Building evidence a public source corroborates, on projects built on Robinhood Chain; a week of code activity or prereleases counts once per project, a code week HEY read as documentation, maintenance or data only does not count, and a release cut from a rolling tag (latest, nightly, edge…) is not a ship."
+        }
+      },
+      "newBuilders": {
+        "total": 133,
+        "items": [
+          {
+            "project": {
+              "slug": "liege-agents",
+              "name": "Liege Agents",
+              "symbol": "LIEGE",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 149673,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/liege-agents"
+            },
+            "verifiedAt": "2026-10-02T05:13:57.497Z"
+          },
+          {
+            "project": {
+              "slug": "aptcasino-fun-by-virtuals",
+              "name": "AptCasino.fun by Virtuals",
+              "symbol": "APTC",
+              "activityStatus": "DORMANT",
+              "url": "https://heyresearch.xyz/project/aptcasino-fun-by-virtuals"
+            },
+            "verifiedAt": "2026-10-02T05:09:32.476Z"
+          },
+          {
+            "project": {
+              "slug": "builder-ten-tegridy-farms",
+              "name": "tegridy-farms",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-ten-tegridy-farms"
+            },
+            "verifiedAt": "2026-10-02T04:28:58.663Z"
+          },
+          {
+            "project": {
+              "slug": "sample-meme",
+              "name": "Sample Meme",
+              "symbol": "SAMPLE",
+              "activityStatus": "ACTIVE",
+              "url": "https://heyresearch.xyz/project/sample-meme"
+            },
+            "verifiedAt": "2026-10-02T03:12:37.230Z"
+          },
+          {
+            "project": {
+              "slug": "buck50",
+              "name": "BUCK50",
+              "symbol": "BUCK50",
+              "activityStatus": "ACTIVE",
+              "url": "https://heyresearch.xyz/project/buck50"
+            },
+            "verifiedAt": "2026-10-02T03:12:32.229Z"
+          },
+          {
+            "project": {
+              "slug": "digitaldon",
+              "name": "DigitalDon",
+              "symbol": "don",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 24586.208144,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/digitaldon"
+            },
+            "verifiedAt": "2026-10-02T01:15:54.695Z"
+          }
+        ]
+      },
+      "backToShipping": {
+        "total": 1,
+        "comparable": 3266,
+        "items": [
+          {
+            "project": {
+              "slug": "builder-eleven-arb-guardian",
+              "name": "arb-guardian",
+              "activityStatus": "RESUMED",
+              "url": "https://heyresearch.xyz/project/builder-eleven-arb-guardian"
+            },
+            "from": "QUIET",
+            "to": "RESUMED",
+            "changedAt": "2026-10-02T08:39:18.732Z"
+          }
+        ]
+      },
+      "stillBuilding": {
+        "total": 4,
+        "items": [
+          {
+            "slug": "loom",
+            "name": "Loom",
+            "symbol": "LOOM",
+            "activityStatus": "SHIPPING",
+            "marketCapUsd": 93007,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/loom"
+          },
+          {
+            "slug": "pare",
+            "name": "Pare",
+            "symbol": "pare",
+            "activityStatus": "SHIPPING",
+            "marketCapUsd": 3677420,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/pare"
+          },
+          {
+            "slug": "projectvex",
+            "name": "ProjectVex",
+            "symbol": "VEX",
+            "activityStatus": "ACTIVE",
+            "marketCapUsd": 3310680,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/projectvex"
+          },
+          {
+            "slug": "diesel",
+            "name": "Diesel",
+            "symbol": "DIESEL",
+            "activityStatus": "ACTIVE",
+            "marketCapUsd": 436334,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/diesel"
+          }
+        ]
+      },
+      "underTheRadar": {
+        "total": 9,
+        "items": [
+          {
+            "slug": "loom",
+            "name": "Loom",
+            "symbol": "LOOM",
+            "activityStatus": "SHIPPING",
+            "marketCapUsd": 93007,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/loom"
+          },
+          {
+            "slug": "tiny-humans-ai",
+            "name": "Tiny Humans AI",
+            "symbol": "tiny",
+            "activityStatus": "SHIPPING",
+            "marketCapUsd": 715495,
+            "valuationKind": "marketCap",
+            "url": "https://heyresearch.xyz/project/tiny-humans-ai"
+          },
+          {
+            "slug": "chit",
+            "name": "Chit",
+            "symbol": "CHIT",
+            "activityStatus": "SHIPPING",
+            "marketCapUsd": 174430,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/chit"
+          },
+          {
+            "slug": "hey-research-lab",
+            "name": "Hey Research Lab",
+            "symbol": "HEY",
+            "heysOwnToken": true,
+            "activityStatus": "SHIPPING",
+            "marketCapUsd": 173760,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/hey-research-lab"
+          },
+          {
+            "slug": "catch-exchange",
+            "name": "Catch Exchange",
+            "symbol": "cCATCH",
+            "activityStatus": "ACTIVE",
+            "marketCapUsd": 1076981,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/catch-exchange"
+          },
+          {
+            "slug": "diesel",
+            "name": "Diesel",
+            "symbol": "DIESEL",
+            "activityStatus": "ACTIVE",
+            "marketCapUsd": 436334,
+            "valuationKind": "fdv",
+            "url": "https://heyresearch.xyz/project/diesel"
+          }
+        ]
+      },
+      "links": {
+        "page": "https://heyresearch.xyz/this-week",
+        "ships": "https://heyresearch.xyz/ships",
+        "radar": "https://heyresearch.xyz/radar",
+        "methodology": "https://heyresearch.xyz/methodology"
+      },
+      "disclaimer": "Counts of public, source-backed activity HEY recorded in the stated window. Not a prediction, not a ranking by price, and not investment advice."
+    }
+  }
+}

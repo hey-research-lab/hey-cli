@@ -1,0 +1,226 @@
+{
+  "request": {
+    "path": "/api/agent/unknowns",
+    "params": {
+      "project": "musepass-musepass"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-request-id": "aa3a6bc4-cdbf-40bb-863b-3eb069d2c13c",
+      "x-hey-api-version": "1"
+    },
+    "body": {
+      "schema": "hey.agent-intelligence-response",
+      "schemaVersion": "1",
+      "capability": "unknowns",
+      "status": "ok",
+      "query": {
+        "chainId": 4663,
+        "project": "musepass-musepass"
+      },
+      "chain": {
+        "chainId": 4663,
+        "name": "Robinhood Chain"
+      },
+      "subject": {
+        "kind": "project",
+        "project": {
+          "slug": "musepass-musepass",
+          "name": {
+            "text": "musepass",
+            "contentOrigin": "external_source",
+            "source": "project_record"
+          },
+          "url": "https://heyresearch.xyz/project/musepass-musepass"
+        }
+      },
+      "answer": {
+        "text": "HEY does not know 2 things about musepass-musepass (1 NOT_MEASURED, 1 NOT_VERIFIED). None of them is evidence for or against the project; each says what not to conclude.",
+        "contentOrigin": "derived"
+      },
+      "answerStatus": "FACT",
+      "claims": [
+        {
+          "id": "coverage.measured",
+          "dimension": "coverage",
+          "statement": {
+            "text": "HEY measured 9 of 21 coverage dimensions for musepass-musepass: identity, builderEvidence, repositories, releases, timeline, officialDocs, sourceChanges, gitHost, package. Figures there are measurements, zeros included.",
+            "contentOrigin": "derived"
+          },
+          "status": "FACT",
+          "value": 9,
+          "source": {
+            "name": "project coverage",
+            "type": "hey_record"
+          },
+          "observedAt": "2026-10-02T11:36:55.097Z",
+          "occurredAt": null,
+          "precision": null,
+          "freshness": "live",
+          "evidence": [],
+          "explainUrl": "https://heyresearch.xyz/api/projects/musepass-musepass/coverage",
+          "evidenceKind": "coverage_state"
+        }
+      ],
+      "unknowns": [
+        {
+          "category": "NOT_VERIFIED",
+          "dimension": "projectOwner",
+          "statement": {
+            "text": "No owner has proved control of this project’s site, repository or contract to HEY.",
+            "contentOrigin": "hey"
+          },
+          "doNotConclude": {
+            "text": "HEY has not verified this link. Do not treat it as the project’s own, and do not treat it as false either.",
+            "contentOrigin": "hey"
+          },
+          "reason": "owner_not_verified"
+        },
+        {
+          "category": "NOT_MEASURED",
+          "dimension": "apiDocs",
+          "statement": {
+            "text": "Its website links no API description.",
+            "contentOrigin": "hey"
+          },
+          "doNotConclude": {
+            "text": "HEY has not measured this. Do not read it as zero, as absent or as negative evidence about the project.",
+            "contentOrigin": "hey"
+          },
+          "coverageState": "NO_SOURCE",
+          "reason": "no_api_description_linked",
+          "asOf": "2026-10-01T02:07:13.380Z",
+          "detailUrl": "https://heyresearch.xyz/api/projects/musepass-musepass/coverage"
+        }
+      ],
+      "freshness": [
+        {
+          "family": "builder_sources",
+          "observedAt": "2026-10-02T11:14:01.681Z",
+          "dataAsOf": "2026-10-02T11:14:01.681Z",
+          "freshnessStatus": "recent",
+          "staleAfterHours": 72,
+          "refresh": {
+            "job": "REFRESH_GITHUB",
+            "everyMinutes": 60,
+            "slowestMinutes": 4320,
+            "basis": {
+              "text": "Repositories, release feeds and changelogs are re-read by refresh tier (HOT hourly, WARM every 6 hours, COOL daily, COLD every 3 days); the tier follows the activity status and the last meaningful ship. A failing source backs off. A reading is stale after 72 hours, or one and a half cadences of its tier where that is longer (108 hours on COLD).",
+              "contentOrigin": "hey"
+            }
+          },
+          "nextExpectedRefresh": "2026-10-02T12:14:01.681Z"
+        },
+        {
+          "family": "activity_score",
+          "observedAt": "2026-10-02T11:19:06.743Z",
+          "dataAsOf": "2026-10-02T11:19:06.743Z",
+          "freshnessStatus": "recent",
+          "staleAfterHours": 24,
+          "refresh": {
+            "job": "RECALCULATE_SCORES",
+            "everyMinutes": 720,
+            "slowestMinutes": 720,
+            "basis": {
+              "text": "A project is due for rescoring once its score is 12 hours old (RESCORE_MIN_INTERVAL_HOURS); a newly recorded ship queues a rescore within the quarter hour. The next refresh is the latest expected time, not a promise: a backlog can delay it.",
+              "contentOrigin": "hey"
+            }
+          },
+          "nextExpectedRefresh": "2026-10-02T23:19:06.743Z"
+        }
+      ],
+      "evidence": [],
+      "data": {
+        "counts": {
+          "UNKNOWN": 0,
+          "NOT_MEASURED": 1,
+          "NOT_VERIFIED": 1,
+          "STALE": 0,
+          "INSUFFICIENT_EVIDENCE": 0
+        },
+        "measured": [
+          "identity",
+          "builderEvidence",
+          "repositories",
+          "releases",
+          "timeline",
+          "officialDocs",
+          "sourceChanges",
+          "gitHost",
+          "package"
+        ],
+        "notApplicable": [
+          "marketCurrent",
+          "marketHistory",
+          "contractDeployment",
+          "contractActivity",
+          "contractSource",
+          "contractInterface",
+          "distribution",
+          "locks",
+          "marketIntegrity",
+          "protocolEconomics",
+          "securityContext"
+        ],
+        "withheld": [],
+        "coverageUrl": "https://heyresearch.xyz/api/projects/musepass-musepass/coverage"
+      },
+      "methodology": {
+        "rules": [
+          {
+            "id": "agent_freshness",
+            "version": "agent-freshness-v2"
+          },
+          {
+            "id": "machine_text",
+            "version": "machine-text-v1"
+          }
+        ],
+        "url": "https://heyresearch.xyz/methodology"
+      },
+      "links": {
+        "self": "https://heyresearch.xyz/api/agent/unknowns?project=musepass-musepass",
+        "page": "https://heyresearch.xyz/project/musepass-musepass",
+        "canonical": [
+          "https://heyresearch.xyz/api/projects/musepass-musepass/coverage",
+          "https://heyresearch.xyz/api/projects/musepass-musepass/snapshot"
+        ]
+      },
+      "citation": {
+        "kind": "hey_agent_answer",
+        "capability": "unknowns",
+        "schemaVersion": "1",
+        "url": "https://heyresearch.xyz/api/agent/unknowns?project=musepass-musepass",
+        "asOf": "2026-10-02T11:36:55.097Z",
+        "project": "musepass-musepass"
+      },
+      "boundaries": {
+        "notAdvice": true,
+        "notProvided": [
+          "investment_recommendation",
+          "buy_or_sell_signal",
+          "price_prediction",
+          "price_target",
+          "position_size",
+          "leverage",
+          "stop_loss",
+          "ranking_by_expected_return",
+          "risk_score",
+          "safety_verdict",
+          "smart_money_label",
+          "wallet_pnl",
+          "wallet_profile"
+        ],
+        "marketIsContextOnly": true,
+        "disclaimer": {
+          "text": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown — it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts.",
+          "contentOrigin": "hey"
+        }
+      },
+      "asOf": "2026-10-02T11:36:55.097Z"
+    }
+  }
+}

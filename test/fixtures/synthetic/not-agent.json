@@ -1,0 +1,19 @@
+{
+  "_note": "Synthetic: hand-written to exercise a path the live API cannot be asked for politely. Shapes follow docs/PUBLIC_API.",
+  "request": {
+    "path": "/api/agent/research_project",
+    "params": {
+      "project": "example-project"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-hey-api-version": "1"
+    },
+    "body": {
+      "hello": "not the agent contract"
+    }
+  }
+}
