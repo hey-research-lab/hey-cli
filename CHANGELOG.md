@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## 0.1.2 — 2026-10-03
+
+- `hey token` on a Robinhood stock token prints HEY's sentence — "Robinhood stock token: NVIDIA (NVDA) — issued by Robinhood, not a project on HEY." — from the additive `issuer` field; `--quiet` prints `unknown issuer_token`. Exit 4 as before. `--json` relays the field as sent.
+- `bin` paths written without `./`, as npm normalises them (publishing warned).
+
 ## 0.1.1 — 2026-10-02
 
 - `hey scan`: when HEY has not measured a project's building (`activity_measured: false`), Releases and Ships (30d) print "not measured" instead of the card's 0, as the Telegram bot does. `--json` is unchanged.

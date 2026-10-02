@@ -1,6 +1,6 @@
 {
   "name": "@hey-research-lab/cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Terminal client for HEY Research Lab's public API: Robinhood Chain projects, ships, changes, evidence and unknowns, with JSON output for scripts and agents.",
   "license": "MIT",
   "author": "HEY Research Lab",
@@ -26,8 +26,8 @@
     "node": ">=22"
   },
   "bin": {
-    "hey": "./dist/cli.js",
-    "hey-research": "./dist/cli.js"
+    "hey": "dist/cli.js",
+    "hey-research": "dist/cli.js"
   },
   "exports": {
     "./package.json": "./package.json"

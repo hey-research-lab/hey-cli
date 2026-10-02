@@ -25,6 +25,8 @@ export const token: CommandSpec = {
     const d = rec(data);
     const published = str(d.status) === 'published';
     const p = rec(d.project);
+    // HEY 2026-10-02 (additive): an issuer's token — a Robinhood stock token — is never a project's.
+    const issuerSentence = str(rec(d.issuer).sentence);
     return {
       data,
       exitCode: published ? EXIT.OK : EXIT.NOT_FOUND,
@@ -32,11 +34,21 @@ export const token: CommandSpec = {
         out.line(
           published
             ? `${str(p.slug) ?? 'unknown'} ${str(p.activityStatus) ?? 'UNKNOWN'}`
-            : 'unknown',
+            : issuerSentence
+              ? 'unknown issuer_token'
+              : 'unknown',
         );
       },
       render(out) {
         const address = out.text(str(d.contractAddress) ?? input.address, 42);
+        if (!published && issuerSentence) {
+          out.line(out.text(issuerSentence, 200));
+          out.line("It is never any project's token, so HEY has no project for it.");
+          const scan = link(d.scanUrl);
+          if (scan) out.kv('Scan on HEY', scan);
+          footer(out, d.disclaimer);
+          return;
+        }
         if (!published) {
           out.line(
             `HEY's published catalogue holds no project for ${address} on Robinhood Chain (status ${word(out, d.status)}).`,

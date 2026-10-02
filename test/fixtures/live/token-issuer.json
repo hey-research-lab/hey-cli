@@ -1,0 +1,27 @@
+{
+  "request": {
+    "path": "/api/token/4663/0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+    "params": {}
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-hey-api-version": "1",
+      "x-request-id": "9ff53e72-4d9b-402f-b099-c8e72c27d31d"
+    },
+    "body": {
+      "chainId": 4663,
+      "contractAddress": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+      "scanUrl": "https://heyresearch.xyz/scan/0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+      "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown — it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts.",
+      "status": "unknown",
+      "issuer": {
+        "issuerName": "Robinhood",
+        "kind": "stock_token",
+        "symbol": "NVDA",
+        "sentence": "Robinhood stock token: NVIDIA (NVDA) — issued by Robinhood, not a project on HEY."
+      }
+    }
+  }
+}

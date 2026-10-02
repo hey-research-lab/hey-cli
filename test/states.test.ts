@@ -40,6 +40,16 @@ describe('not found is exit 4, and an answer is never an error', () => {
     );
   });
 
+  it('token: a Robinhood stock token says who issued it, never a project (0.1.2)', async () => {
+    const address = '0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec';
+    const r = await runFixture(['token', address], 'token-issuer');
+    expect(r.code).toBe(4);
+    expect(r.stdout).toContain('Robinhood stock token: NVIDIA (NVDA) — issued by Robinhood');
+    expect(r.stdout).toContain("never any project's token");
+    const quiet = await runFixture(['token', address, '--quiet'], 'token-issuer');
+    expect(quiet.stdout.trim()).toBe('unknown issuer_token');
+  });
+
   it('scan: found false is exit 4', async () => {
     const r = await runFixture(
       ['scan', '0x0000000000000000000000000000000000000001'],
