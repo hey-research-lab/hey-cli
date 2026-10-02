@@ -46,7 +46,9 @@ HEY_LIVE=1 node scripts/record-fixtures.mjs
 
 About twenty read-only GETs on public routes, at most one per second, no API key. Never run it in
 CI. Review the diff before committing: the fixtures are public data, but check that nothing
-unexpected was captured, and run `pnpm scan`.
+unexpected was captured, and run `pnpm scan`. Replace personal account handles and any
+offensive or wallet-flavoured project names with neutral placeholders (`builder-one`,
+`sample-meme`) before you commit; keep the structure exactly as recorded.
 
 ## Parity
 
