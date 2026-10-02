@@ -162,6 +162,9 @@ describe('unknown stays unknown', () => {
     expect(r.stdout).toContain('the counts below are not measurements');
     expect(r.stdout).toContain("this activity is the project's, not this token's");
     expect(r.stdout).toMatch(/Last ship\s+unknown/);
+    // The card's 0s are not measurements: printed as such, as the bot does (0.1.1).
+    expect(r.stdout).toMatch(/Releases \(30d\)\s+not measured/);
+    expect(r.stdout).toMatch(/Ships \(30d\)\s+not measured/);
   });
 
   it('scan --json keeps the absent field absent (no 0, no null filled in)', async () => {

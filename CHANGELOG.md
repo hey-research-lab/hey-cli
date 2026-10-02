@@ -4,6 +4,12 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## 0.1.1 — 2026-10-02
+
+- `hey scan`: when HEY has not measured a project's building (`activity_measured: false`), Releases and Ships (30d) print "not measured" instead of the card's 0, as the Telegram bot does. `--json` is unchanged.
+- `hey help <command>`: option descriptions line up in one column however long the flag (`--project <slug>` ran into its text).
+- Issue templates (bug, idea) with private security reporting and HEY corrections linked.
+
 ## 0.1.0 — 2026-10-02
 
 Initial release.

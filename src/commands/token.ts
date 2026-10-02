@@ -181,15 +181,26 @@ export const scan: CommandSpec = {
               ? `${commits} or more (a commits page was cut inside the window)`
               : String(commits),
         );
+        // The partner card sends 0 where nothing was measured (its fields never change meaning);
+        // the CLI prints what that 0 is, as the bot does.
         const releases = num(a.releases_30d);
-        out.kv('Releases (30d)', releases === undefined ? 'unknown' : String(releases));
+        out.kv(
+          'Releases (30d)',
+          measured === false
+            ? 'not measured'
+            : releases === undefined
+              ? 'unknown'
+              : String(releases),
+        );
         const ships = num(a.ships_30d);
         const meaningful = num(a.meaningful_ships_30d);
         out.kv(
           'Ships (30d)',
-          ships === undefined
-            ? 'unknown'
-            : `${ships}${meaningful !== undefined ? ` (${meaningful} meaningful)` : ''}`,
+          measured === false
+            ? 'not measured'
+            : ships === undefined
+              ? 'unknown'
+              : `${ships}${meaningful !== undefined ? ` (${meaningful} meaningful)` : ''}`,
         );
         const title = str(a.last_ship_title);
         out.kv(

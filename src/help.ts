@@ -35,12 +35,13 @@ export function mainHelp(): string {
 
 export function commandHelp(c: CommandSpec): string {
   const lines = [`Usage: ${c.synopsis}`, '', c.summary, '', `Reads: ${c.endpoint}`];
-  const options: string[] = [];
-  if (c.limit) options.push(`  --limit <n>    ${c.limit.note}`);
-  if (c.since) options.push(`  --since <date> ${c.since}`);
-  for (const e of c.extra ?? []) {
-    options.push(`  --${e.name} <${e.value}>`.padEnd(17) + e.help);
-  }
+  // One column for every option, as wide as the longest flag plus two spaces.
+  const rows: [string, string][] = [];
+  if (c.limit) rows.push(['--limit <n>', c.limit.note]);
+  if (c.since) rows.push(['--since <date>', c.since]);
+  for (const e of c.extra ?? []) rows.push([`--${e.name} <${e.value}>`, e.help]);
+  const width = Math.max(0, ...rows.map(([flag]) => flag.length)) + 2;
+  const options = rows.map(([flag, help]) => `  ${flag.padEnd(width)}${help}`);
   options.push('  --json, --quiet, --no-color');
   lines.push('', 'Options:', ...options);
   if (c.noLimit) lines.push(`  (no --limit: ${c.noLimit})`);

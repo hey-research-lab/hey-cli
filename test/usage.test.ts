@@ -142,3 +142,16 @@ describe('the base URL override', () => {
     expect(seen[0]?.auth).toBeNull();
   });
 });
+
+describe('help columns (0.1.1)', () => {
+  it('keeps every option description in one column, however long the flag', async () => {
+    const r = await runCli(['help', 'ships'], noFetch);
+    const starts = r.stdout
+      .split('\n')
+      .map((line) => /^ {2}(--\S+ <[^>]+>)( +)\S/u.exec(line))
+      .filter((m): m is RegExpExecArray => m !== null)
+      .map((m) => 2 + (m[1]?.length ?? 0) + (m[2]?.length ?? 0));
+    expect(starts.length).toBe(4);
+    expect(new Set(starts).size).toBe(1);
+  });
+});
