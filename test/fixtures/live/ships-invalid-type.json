@@ -10,7 +10,7 @@
     "status": 400,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "e0e54d29-8851-42a2-8330-5be1ec6841af",
+      "x-request-id": "0fc2c460-ac93-4935-9038-efbd27284804",
       "x-hey-api-version": "1"
     },
     "body": {
@@ -49,7 +49,7 @@
           "message": "type=banana is not a value this API reads. Allowed: PRODUCT_LAUNCH, FEATURE_RELEASE, APP_RELEASE, GITHUB_RELEASE, CODE_ACTIVITY, CONTRACT_DEPLOY, CONTRACT_UPGRADE, CONTRACT_DEPLOY_FOLLOWUP, INTEGRATION, DOCS_UPDATE, ROADMAP_MILESTONE, API_RELEASE, SDK_RELEASE, DESIGN_RELEASE, DEMO_RELEASE, COMMUNITY_TOOL, GAME_RELEASE, CREATIVE_DROP, COMMUNITY_EVENT, FOUNDER_BUILD_UPDATE, ANNOUNCEMENT, OTHER, releases, release."
         }
       ],
-      "requestId": "e0e54d29-8851-42a2-8330-5be1ec6841af",
+      "requestId": "0fc2c460-ac93-4935-9038-efbd27284804",
       "retryable": false
     }
   }

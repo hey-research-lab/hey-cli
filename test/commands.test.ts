@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { liveIndex, loadFixture, runFixture } from './helpers.js';
+import { liveIndex, loadFixture, runCli, runFixture } from './helpers.js';
 
 const ids = liveIndex();
 
@@ -135,7 +135,7 @@ describe('human output prints the canonical words', () => {
   it('project prints the activity status and Still Building state verbatim with the reason', async () => {
     const r = await runFixture(['project', ids.slug], 'project');
     expect(r.stdout).toMatch(/Activity\s+SHIPPING/);
-    expect(r.stdout).toMatch(/Still Building\s+NOT_MEASURED — no_token/);
+    expect(r.stdout).toMatch(/Still Building\s+NOT_MEASURED — not_scored/);
     expect(r.stdout).toMatch(/Token\s+none on HEY's record/);
     expect(r.stdout).toContain('https://heyresearch.xyz/project/musepass-musepass');
     expect(r.stdout).toContain('not investment advice');
@@ -170,7 +170,7 @@ describe('human output prints the canonical words', () => {
     expect(r.stdout).toContain("HEY's own records");
     expect(r.stdout).toContain('Chain and market context');
     expect(r.stdout).toContain('never a builder input');
-    expect(r.stdout).toContain('2026-10-02 partial');
+    expect(r.stdout).toContain('2026-10-09 partial');
   });
 
   it('this-week does not print the bare market figures', async () => {
@@ -190,13 +190,13 @@ describe('human output prints the canonical words', () => {
     expect(r.stdout).toContain(
       'Shipping — Shipped something meaningful in the last 7 days. (SHIPPING)',
     );
-    expect(r.stdout).toContain('verification UNVERIFIED — market_listing');
+    expect(r.stdout).toContain('verification UNVERIFIED — owner_has_not_published_contract');
   });
 
   it("scan prints the card in HEY's words", async () => {
     const r = await runFixture(['scan', ids.token], 'scan');
     expect(r.stdout).toMatch(/Status\s+Shipping — Shipped something meaningful/);
-    expect(r.stdout).toMatch(/Commits \(30d\)\s+86/);
+    expect(r.stdout).toMatch(/Commits \(30d\)\s+128 or more/);
   });
 
   it('evidence prints a standing record with its source and precision', async () => {
@@ -204,6 +204,54 @@ describe('human output prints the canonical words', () => {
     expect(r.stdout).toContain('CODE_ACTIVITY');
     expect(r.stdout).toContain('(WEEK)');
     expect(r.stdout).toContain('counts toward activity status');
+  });
+
+  it('project prints a launch pool as "Launch pool only", with no valuation', async () => {
+    const r = await runFixture(['project', 'agentos'], 'project-launch-pool');
+    expect(r.code).toBe(0);
+    expect(r.stdout).toMatch(/Market context\s+Launch pool only/);
+    expect(r.stdout).not.toMatch(/FDV \$|Market cap \$/);
+  });
+
+  it('project says a withheld valuation is withheld, with its reason', async () => {
+    const r = await runFixture(['project', 'priors-agents'], 'project-withheld');
+    expect(r.code).toBe(0);
+    expect(r.stdout).toMatch(/Market context\s+valuation withheld — launch_pool_no_trades/);
+  });
+
+  it('project names a second source that disagrees beside the valuation', async () => {
+    const body = structuredClone(loadFixture('project-launch-pool').response.body) as Record<
+      string,
+      Record<string, unknown>
+    >;
+    body.tokenMarket = { ...body.tokenMarket, reason: 'liquidity_and_volume' };
+    body.market = {
+      ...body.market,
+      sourcesDisagree: {
+        source: 'geckoterminal',
+        priceUsd: 0.00002,
+        observedAt: '2026-10-09T03:00:00.000Z',
+      },
+    };
+    const r = await runCli(['project', 'agentos'], async () => new Response(JSON.stringify(body)));
+    expect(r.stdout).toMatch(/Market context\s+FDV \$/);
+    expect(r.stdout).toContain('sources disagree: geckoterminal prices it more than 2× away');
+  });
+
+  it('pulse prints a withheld DEX volume as withheld, never 0 or unknown', async () => {
+    const body = structuredClone(loadFixture('pulse').response.body) as {
+      days: Record<string, unknown>[];
+    };
+    const day = body.days[0] ?? {};
+    delete day.dexVolumeUsd;
+    day.dexVolumeWithheld = 'implausible_vs_trailing_median';
+    const r = await runCli(
+      ['pulse', '--days', '3'],
+      async () => new Response(JSON.stringify(body)),
+    );
+    expect(r.code).toBe(0);
+    expect(r.stdout).toMatch(/withheld/);
+    expect(r.stdout).toContain('(implausible_vs_trailing_median)');
   });
 
   it('colour is used only on a terminal and NO_COLOR / --no-color turn it off', async () => {

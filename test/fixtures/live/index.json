@@ -1,7 +1,9 @@
 {
-  "recordedAt": "2026-10-02T11:37:40.207Z",
+  "recordedAt": "2026-10-09T04:15:27.281Z",
   "base": "https://heyresearch.xyz",
   "slug": "musepass-musepass",
   "token": "0x7e7154eb9dd81084625a7a2e9e731cadfddb9ab7",
-  "evidenceId": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1"
+  "evidenceId": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
+  "launchPoolSlug": "agentos",
+  "withheldSlug": "priors-agents"
 }

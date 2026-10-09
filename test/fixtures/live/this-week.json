@@ -7,284 +7,74 @@
     "status": 200,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "0d78d1ad-86cb-440a-83b9-5e5e5457dcdb",
+      "x-request-id": "faa3c6b6-ad8b-46d4-9f0f-eae98bf277f5",
       "x-hey-api-version": "1"
     },
     "body": {
       "window": {
-        "since": "2026-09-25T08:41:33.876Z",
-        "until": "2026-10-02T08:41:33.876Z",
+        "since": "2026-10-02T04:15:13.311Z",
+        "until": "2026-10-09T04:15:13.311Z",
         "days": 7,
-        "label": "7 days to 2 Oct 2026"
+        "label": "7 days to 9 Oct 2026"
       },
-      "summary": "368 ships from 215 projects, 133 builders newly verified, 1 project back to shipping — 7 days to 2 Oct 2026.",
+      "summary": "339 ships from 199 projects, 109 builders newly verified, 3 projects back to shipping — 7 days to 9 Oct 2026.",
       "shipped": {
-        "ships": 368,
-        "projects": 215,
+        "ships": 339,
+        "projects": 199,
         "items": [
-          {
-            "project": {
-              "slug": "builder-one-chain-radar",
-              "name": "chain-radar",
-              "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/builder-one-chain-radar"
-            },
-            "ships": 3,
-            "latest": {
-              "title": "insiemi ricostruibili",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-10-01T13:32:10.000Z",
-              "verification": "SOURCE_LINKED",
-              "sourceUrl": "https://github.com/builder-one/chain-radar/releases/tag/insiemi"
-            }
-          },
-          {
-            "project": {
-              "slug": "kybernetwork-kyberswap-dex-lib",
-              "name": "KyberNetwork",
-              "symbol": "INVERSE",
-              "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/kybernetwork-kyberswap-dex-lib"
-            },
-            "ships": 10,
-            "latest": {
-              "title": "v0.134.25",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-10-02T07:30:14.000Z",
-              "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/KyberNetwork/kyberswap-dex-lib/releases/tag/v0.134.25"
-            }
-          },
-          {
-            "project": {
-              "slug": "builder-five-strike",
-              "name": "Strike",
-              "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/builder-five-strike"
-            },
-            "ships": 2,
-            "latest": {
-              "title": "v0.9.0",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-09-30T15:53:37.000Z",
-              "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/builder-five/Strike/releases/tag/v0.9.0"
-            }
-          },
-          {
-            "project": {
-              "slug": "builder-eight-adexto-arbitrum",
-              "name": "builder-eight",
-              "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/builder-eight-adexto-arbitrum"
-            },
-            "ships": 2,
-            "latest": {
-              "title": "v1.0.2 — Factory 0.12.0 on four mainnets, creator fee 0.70%, BUSL-1.1",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-09-29T01:03:46.000Z",
-              "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/builder-eight/adexto/releases/tag/v1.0.2"
-            }
-          },
-          {
-            "project": {
-              "slug": "builder-four-loophole-tape",
-              "name": "loophole-tape",
-              "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/builder-four-loophole-tape"
-            },
-            "ships": 3,
-            "latest": {
-              "title": "loopholetape-mcp 0.2.0",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-09-30T18:08:07.000Z",
-              "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/builder-four/loophole-tape/releases/tag/mcp-v0.2.0"
-            }
-          },
-          {
-            "project": {
-              "slug": "merrymen",
-              "name": "Merrymen",
-              "symbol": "MERRYMEN",
-              "activityStatus": "SHIPPING",
-              "marketCapUsd": 518912,
-              "valuationKind": "fdv",
-              "url": "https://heyresearch.xyz/project/merrymen"
-            },
-            "ships": 3,
-            "latest": {
-              "title": "Android 0.2.0",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-09-26T11:36:15.000Z",
-              "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/builder-nine/merrymen/releases/tag/android-v0.2.0"
-            }
-          },
-          {
-            "project": {
-              "slug": "signaldesk-signal-sdk",
-              "name": "signal-sdk",
-              "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/signaldesk-signal-sdk"
-            },
-            "ships": 2,
-            "latest": {
-              "title": "v0.1.0",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-10-01T21:18:24.000Z",
-              "verification": "SOURCE_LINKED",
-              "sourceUrl": "https://github.com/signaldesk/signal-sdk/releases/tag/v0.1.0"
-            }
-          },
-          {
-            "project": {
-              "slug": "builder-six-hivemindos",
-              "name": "hivemindos",
-              "symbol": "hive",
-              "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/builder-six-hivemindos"
-            },
-            "ships": 5,
-            "latest": {
-              "title": "v0.9.0",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-10-01T19:32:54.000Z",
-              "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/builder-six/hivemindos/releases/tag/v0.9.0"
-            }
-          },
           {
             "project": {
               "slug": "agentos",
               "name": "AgentOS",
-              "symbol": "AgentOS",
+              "symbol": "agentos",
               "activityStatus": "SHIPPING",
+              "marketCapUsd": 507590,
+              "valuationKind": "fdv",
               "url": "https://heyresearch.xyz/project/agentos"
             },
-            "ships": 7,
+            "ships": 5,
             "latest": {
-              "title": "AgentOS 2026.10.1.post1",
+              "title": "AgentOS 2026.10.9",
               "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-10-01T17:03:50.000Z",
+              "publishedAt": "2026-10-09T03:43:12.000Z",
               "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/use-agent-os/agent-os/releases/tag/v2026.10.1.post1"
+              "sourceUrl": "https://github.com/use-agent-os/agent-os/releases/tag/v2026.10.9"
             }
           },
           {
             "project": {
-              "slug": "builder-seven-cargoflow",
-              "name": "CargoFlow",
+              "slug": "programmablehq-programmable",
+              "name": "programmablehq",
+              "symbol": "V4",
               "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/builder-seven-cargoflow"
-            },
-            "ships": 2,
-            "latest": {
-              "title": "v0.8.0: testnet prototype",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-10-01T12:45:34.000Z",
-              "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/builder-seven/CargoFlow/releases/tag/v0.8.0"
-            }
-          },
-          {
-            "project": {
-              "slug": "pumptao",
-              "name": "pumpTAO",
-              "symbol": "TAOPMP",
-              "activityStatus": "SHIPPING",
-              "marketCapUsd": 3330,
+              "marketCapUsd": 3136270,
               "valuationKind": "fdv",
-              "url": "https://heyresearch.xyz/project/pumptao"
-            },
-            "ships": 2,
-            "latest": {
-              "title": "v0.1.0 — Native TAO launchpad developer preview",
-              "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-10-01T07:54:38.000Z",
-              "verification": "SOURCE_LINKED",
-              "sourceUrl": "https://github.com/pumpTAO/launchpad-core/releases/tag/v0.1.0"
-            }
-          },
-          {
-            "project": {
-              "slug": "verge-snowy-x402",
-              "name": "Verge Snowy x402",
-              "symbol": "VERGE402",
-              "activityStatus": "SHIPPING",
-              "marketCapUsd": 19220,
-              "valuationKind": "fdv",
-              "url": "https://heyresearch.xyz/project/verge-snowy-x402"
+              "url": "https://heyresearch.xyz/project/programmablehq-programmable"
             },
             "ships": 3,
             "latest": {
-              "title": "v1.2.0 — ZK batch proofs + standalone facilitator binary",
+              "title": "Programmable Launch CLI 4.1.3",
               "eventType": "GITHUB_RELEASE",
-              "publishedAt": "2026-09-27T19:05:54.000Z",
+              "publishedAt": "2026-10-08T13:16:11.000Z",
               "verification": "PUBLICLY_VERIFIED",
-              "sourceUrl": "https://github.com/vergex402/verge/releases/tag/v1.2.0"
+              "sourceUrl": "https://github.com/programmablehq/PROGRAMMABLE/releases/tag/programmable-launch-v4.1.3"
             }
-          }
-        ],
-        "rule": {
-          "id": "weekly-ships-v4",
-          "counts": "Building evidence a public source corroborates, on projects built on Robinhood Chain; a week of code activity or prereleases counts once per project, a code week HEY read as documentation, maintenance or data only does not count, and a release cut from a rolling tag (latest, nightly, edge…) is not a ship."
-        }
-      },
-      "newBuilders": {
-        "total": 133,
-        "items": [
+          },
           {
             "project": {
-              "slug": "liege-agents",
-              "name": "Liege Agents",
-              "symbol": "LIEGE",
+              "slug": "builder-twelve-crawlscan",
+              "name": "crawlscan",
               "activityStatus": "SHIPPING",
-              "marketCapUsd": 149673,
-              "valuationKind": "fdv",
-              "url": "https://heyresearch.xyz/project/liege-agents"
+              "url": "https://heyresearch.xyz/project/builder-twelve-crawlscan"
             },
-            "verifiedAt": "2026-10-02T05:13:57.497Z"
-          },
-          {
-            "project": {
-              "slug": "aptcasino-fun-by-virtuals",
-              "name": "AptCasino.fun by Virtuals",
-              "symbol": "APTC",
-              "activityStatus": "DORMANT",
-              "url": "https://heyresearch.xyz/project/aptcasino-fun-by-virtuals"
-            },
-            "verifiedAt": "2026-10-02T05:09:32.476Z"
-          },
-          {
-            "project": {
-              "slug": "builder-ten-tegridy-farms",
-              "name": "tegridy-farms",
-              "activityStatus": "SHIPPING",
-              "url": "https://heyresearch.xyz/project/builder-ten-tegridy-farms"
-            },
-            "verifiedAt": "2026-10-02T04:28:58.663Z"
-          },
-          {
-            "project": {
-              "slug": "sample-meme",
-              "name": "Sample Meme",
-              "symbol": "SAMPLE",
-              "activityStatus": "ACTIVE",
-              "url": "https://heyresearch.xyz/project/sample-meme"
-            },
-            "verifiedAt": "2026-10-02T03:12:37.230Z"
-          },
-          {
-            "project": {
-              "slug": "buck50",
-              "name": "BUCK50",
-              "symbol": "BUCK50",
-              "activityStatus": "ACTIVE",
-              "url": "https://heyresearch.xyz/project/buck50"
-            },
-            "verifiedAt": "2026-10-02T03:12:32.229Z"
+            "ships": 7,
+            "latest": {
+              "title": "v1.6.0: Early buyers, Telegram alerts, ETH rewards",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-08T00:05:20.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-twelve/crawlscan/releases/tag/v1.6.0"
+            }
           },
           {
             "project": {
@@ -292,129 +82,288 @@
               "name": "DigitalDon",
               "symbol": "don",
               "activityStatus": "SHIPPING",
-              "marketCapUsd": 24586.208144,
+              "marketCapUsd": 26604,
               "valuationKind": "fdv",
               "url": "https://heyresearch.xyz/project/digitaldon"
             },
-            "verifiedAt": "2026-10-02T01:15:54.695Z"
+            "ships": 5,
+            "latest": {
+              "title": "6 releases in bambini-tech/digitaldon-public on 8 Oct",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-08T22:07:58.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/bambini-tech/digitaldon-public/releases/tag/dido/v0.15.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-fourteen-azimuth",
+              "name": "azimuth",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-fourteen-azimuth"
+            },
+            "ships": 2,
+            "latest": {
+              "title": "v2.9.0",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-06T02:10:50.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-fourteen/azimuth/releases/tag/v2.9.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "equalfilabs-statics-app",
+              "name": "EqualFiLabs",
+              "symbol": "statics",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 12176016,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/equalfilabs-statics-app"
+            },
+            "ships": 3,
+            "latest": {
+              "title": "Genesis Launch — Robinhood Chain Mainnet",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-04T14:04:43.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/EqualFiLabs/statics/releases/tag/genesis-v1.0.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "nautilo",
+              "name": "Nautilo",
+              "symbol": "Nautilo",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 377341,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/nautilo"
+            },
+            "ships": 2,
+            "latest": {
+              "title": "Desktop 0.14.59",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-08T16:32:17.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/agentsea/nautilo/releases/tag/desktop-v0.14.59"
+            }
+          },
+          {
+            "project": {
+              "slug": "autonolas",
+              "name": "Autonolas",
+              "symbol": "olas",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 2337.146347,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/autonolas"
+            },
+            "ships": 6,
+            "latest": {
+              "title": "v0.1.10-rc1",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-08T15:09:24.000Z",
+              "verification": "SOURCE_LINKED",
+              "sourceUrl": "https://github.com/valory-xyz/connect/releases/tag/v0.1.10-rc1"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-nineteen-assetfare-mcp",
+              "name": "builder-nineteen",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-nineteen-assetfare-mcp"
+            },
+            "ships": 4,
+            "latest": {
+              "title": "AssetFare MCP 1.16.0",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-08T14:25:06.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/assetfare/assetfare-mcp/releases/tag/v1.16.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-thirteen-shieldbot",
+              "name": "shieldbot",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-thirteen-shieldbot"
+            },
+            "ships": 3,
+            "latest": {
+              "title": "Browser extension 3.1.0",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-06T06:30:43.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-thirteen/shieldbot/releases/tag/extension-v3.1.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-ten-sample-node-sdk",
+              "name": "builder-ten",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-ten-sample-node-sdk"
+            },
+            "ships": 10,
+            "latest": {
+              "title": "SDK 0.7.0 — lifecycle parity and October 8 deployment",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-08T02:48:37.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-ten/sample-python-sdk/releases/tag/v0.7.0"
+            }
+          },
+          {
+            "project": {
+              "slug": "builder-eleven-sample-sdk",
+              "name": "builder-eleven",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-eleven-sample-sdk"
+            },
+            "ships": 4,
+            "latest": {
+              "title": "Sample Contracts 1.0.4: Audit package",
+              "eventType": "GITHUB_RELEASE",
+              "publishedAt": "2026-10-08T03:31:10.000Z",
+              "verification": "PUBLICLY_VERIFIED",
+              "sourceUrl": "https://github.com/builder-eleven/sample-contracts/releases/tag/v1.0.4"
+            }
+          }
+        ],
+        "rule": {
+          "id": "weekly-ships-v7",
+          "counts": "Building evidence a public source corroborates, on projects built on Robinhood Chain; a week of code activity or prereleases counts once per project, a code week HEY read as documentation, maintenance, CI-only, data or automation only does not count, a week of 25 or more human commits counts only when 3 of a 10-commit sample change code, a release cut from a rolling or date-stamped automated tag is not a ship, one repository’s releases of one UTC day count once, and a project’s contracts deployed in the same second count once."
+        }
+      },
+      "newBuilders": {
+        "total": 109,
+        "items": [
+          {
+            "project": {
+              "slug": "homepad2026-homepad",
+              "name": "HOMEPAD",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/homepad2026-homepad"
+            },
+            "verifiedAt": "2026-10-09T01:15:55.602Z"
+          },
+          {
+            "project": {
+              "slug": "zkquiver-zkquiver",
+              "name": "zkQuiver",
+              "activityStatus": "ACTIVE",
+              "url": "https://heyresearch.xyz/project/zkquiver-zkquiver"
+            },
+            "verifiedAt": "2026-10-09T01:15:50.603Z"
+          },
+          {
+            "project": {
+              "slug": "ponswars-ponswars",
+              "name": "ponswars",
+              "activityStatus": "ACTIVE",
+              "url": "https://heyresearch.xyz/project/ponswars-ponswars"
+            },
+            "verifiedAt": "2026-10-09T01:15:45.603Z"
+          },
+          {
+            "project": {
+              "slug": "builder-seventeen-pons-creator-reputation",
+              "name": "pons-creator-reputation",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-seventeen-pons-creator-reputation"
+            },
+            "verifiedAt": "2026-10-09T00:35:39.947Z"
+          },
+          {
+            "project": {
+              "slug": "builder-eleven-sample-sdk",
+              "name": "builder-eleven",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-eleven-sample-sdk"
+            },
+            "verifiedAt": "2026-10-09T00:35:24.946Z"
+          },
+          {
+            "project": {
+              "slug": "builder-fifteen-sheaf",
+              "name": "sheaf",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-fifteen-sheaf"
+            },
+            "verifiedAt": "2026-10-09T00:34:44.944Z"
           }
         ]
       },
       "backToShipping": {
-        "total": 1,
-        "comparable": 3266,
+        "total": 3,
+        "comparable": 3585,
         "items": [
           {
             "project": {
-              "slug": "builder-eleven-arb-guardian",
-              "name": "arb-guardian",
-              "activityStatus": "RESUMED",
-              "url": "https://heyresearch.xyz/project/builder-eleven-arb-guardian"
+              "slug": "builder-sixteen-robinx-mcp",
+              "name": "robinx-mcp",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-sixteen-robinx-mcp"
+            },
+            "from": "DORMANT",
+            "to": "SHIPPING",
+            "changedAt": "2026-10-09T00:52:25.081Z"
+          },
+          {
+            "project": {
+              "slug": "biscotti",
+              "name": "Biscotti",
+              "symbol": "biscotti",
+              "activityStatus": "SHIPPING",
+              "marketCapUsd": 1208511,
+              "valuationKind": "fdv",
+              "url": "https://heyresearch.xyz/project/biscotti"
             },
             "from": "QUIET",
-            "to": "RESUMED",
-            "changedAt": "2026-10-02T08:39:18.732Z"
+            "to": "SHIPPING",
+            "changedAt": "2026-10-09T00:50:05.071Z"
+          },
+          {
+            "project": {
+              "slug": "builder-eighteen-aeon-protocol",
+              "name": "Aeon-protocol",
+              "activityStatus": "SHIPPING",
+              "url": "https://heyresearch.xyz/project/builder-eighteen-aeon-protocol"
+            },
+            "from": "DORMANT",
+            "to": "SHIPPING",
+            "changedAt": "2026-10-09T00:38:54.971Z"
           }
         ]
       },
       "stillBuilding": {
-        "total": 4,
+        "total": 1,
         "items": [
           {
-            "slug": "loom",
-            "name": "Loom",
-            "symbol": "LOOM",
+            "slug": "nautilo",
+            "name": "Nautilo",
+            "symbol": "Nautilo",
             "activityStatus": "SHIPPING",
-            "marketCapUsd": 93007,
+            "marketCapUsd": 377341,
             "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/loom"
-          },
-          {
-            "slug": "pare",
-            "name": "Pare",
-            "symbol": "pare",
-            "activityStatus": "SHIPPING",
-            "marketCapUsd": 3677420,
-            "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/pare"
-          },
-          {
-            "slug": "projectvex",
-            "name": "ProjectVex",
-            "symbol": "VEX",
-            "activityStatus": "ACTIVE",
-            "marketCapUsd": 3310680,
-            "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/projectvex"
-          },
-          {
-            "slug": "diesel",
-            "name": "Diesel",
-            "symbol": "DIESEL",
-            "activityStatus": "ACTIVE",
-            "marketCapUsd": 436334,
-            "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/diesel"
+            "url": "https://heyresearch.xyz/project/nautilo"
           }
         ]
       },
       "underTheRadar": {
-        "total": 9,
+        "total": 1,
         "items": [
           {
-            "slug": "loom",
-            "name": "Loom",
-            "symbol": "LOOM",
+            "slug": "nautilo",
+            "name": "Nautilo",
+            "symbol": "Nautilo",
             "activityStatus": "SHIPPING",
-            "marketCapUsd": 93007,
+            "marketCapUsd": 377341,
             "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/loom"
-          },
-          {
-            "slug": "tiny-humans-ai",
-            "name": "Tiny Humans AI",
-            "symbol": "tiny",
-            "activityStatus": "SHIPPING",
-            "marketCapUsd": 715495,
-            "valuationKind": "marketCap",
-            "url": "https://heyresearch.xyz/project/tiny-humans-ai"
-          },
-          {
-            "slug": "chit",
-            "name": "Chit",
-            "symbol": "CHIT",
-            "activityStatus": "SHIPPING",
-            "marketCapUsd": 174430,
-            "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/chit"
-          },
-          {
-            "slug": "hey-research-lab",
-            "name": "Hey Research Lab",
-            "symbol": "HEY",
-            "heysOwnToken": true,
-            "activityStatus": "SHIPPING",
-            "marketCapUsd": 173760,
-            "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/hey-research-lab"
-          },
-          {
-            "slug": "catch-exchange",
-            "name": "Catch Exchange",
-            "symbol": "cCATCH",
-            "activityStatus": "ACTIVE",
-            "marketCapUsd": 1076981,
-            "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/catch-exchange"
-          },
-          {
-            "slug": "diesel",
-            "name": "Diesel",
-            "symbol": "DIESEL",
-            "activityStatus": "ACTIVE",
-            "marketCapUsd": 436334,
-            "valuationKind": "fdv",
-            "url": "https://heyresearch.xyz/project/diesel"
+            "url": "https://heyresearch.xyz/project/nautilo"
           }
         ]
       },

@@ -9,7 +9,7 @@
     "status": 200,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "30e6479c-d1ee-4034-9c7e-d5c96d5c8b76",
+      "x-request-id": "4939375c-1bd9-4f38-a2c5-86c4ea5e38d9",
       "x-hey-api-version": "1"
     },
     "body": {
@@ -18,37 +18,111 @@
         "offset": 0,
         "sort": "latest"
       },
-      "total": 3014,
+      "total": 3355,
       "nextOffset": 3,
       "items": [
         {
-          "id": "4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
-          "title": "Active development: 122 commits in the last 90 days across 1 contributor",
-          "summary": "5 active day(s) in musepass/musepass.",
+          "id": "74c59f0e-6b30-446f-9058-757632b3c056",
+          "title": "AgentOS 2026.10.9",
+          "eventType": "GITHUB_RELEASE",
+          "publishedAt": "2026-10-09T03:43:12.000Z",
+          "detectedAt": "2026-10-09T03:49:41.463Z",
+          "precision": "EXACT",
+          "evidenceId": "ship:74c59f0e-6b30-446f-9058-757632b3c056",
+          "verification": "PUBLICLY_VERIFIED",
+          "sourceUrl": "https://github.com/use-agent-os/agent-os/releases/tag/v2026.10.9",
+          "project": {
+            "slug": "agentos",
+            "name": "AgentOS",
+            "symbol": "agentos",
+            "projectKind": "OTHER",
+            "activityStatus": "SHIPPING",
+            "researchLevel": "VERIFIED_BUILDER",
+            "catalogStatus": "VERIFIED_BUILDER",
+            "stillBuilding": false,
+            "stillBuildingState": "NOT_MEASURED",
+            "lastShippedAt": "2026-10-09T03:43:12.000Z",
+            "primaryNarrative": {
+              "slug": "ai",
+              "name": "AI"
+            },
+            "token": {
+              "chainId": 4663,
+              "contractAddress": "0x6eda83fc299c10d474068a7e69771c809bcbbba3"
+            },
+            "websiteUrl": "https://useagentos.dev/",
+            "officialX": {
+              "handle": "useAgentOS",
+              "url": "https://x.com/useAgentOS"
+            },
+            "marketCap": {
+              "usd": 507590,
+              "source": "dexscreener",
+              "kind": "fdv",
+              "observedAt": "2026-10-09T03:55:20.132Z"
+            },
+            "liquidity": {
+              "usd": 350713.43,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T03:55:20.132Z",
+              "kind": "launch_inventory"
+            },
+            "volume24h": {
+              "usd": 472.05,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T03:55:20.132Z"
+            },
+            "launchStage": "DEX",
+            "tokenMarket": {
+              "status": "ACTIVE_MARKET",
+              "reason": "launch_pool_trading"
+            },
+            "tokenVerification": {
+              "status": "VERIFIED",
+              "reason": "site_names_contract"
+            },
+            "venue": "DEX",
+            "trades24h": {
+              "buys": 19,
+              "sells": 29,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T03:55:20.132Z"
+            },
+            "priceChange24hPct": -2.93,
+            "hasBuilderSource": true,
+            "logoUrl": "https://coin-images.coingecko.com/coins/images/102174570/small/b6b5ojnnrpnx7zs0zm302gumiizv.?1784093688",
+            "url": "https://heyresearch.xyz/project/agentos"
+          },
+          "url": "https://heyresearch.xyz/project/agentos#ship-74c59f0e-6b30-446f-9058-757632b3c056"
+        },
+        {
+          "id": "31ecea7f-01b7-4d7d-ae89-a41b20dc7b92",
+          "title": "Code changes, week of 2026-10-05 – 2026-10-11",
+          "summary": "7 active days in use-agent-os/agent-os since 2026-10-01; only the newest 100 commits were read.",
           "eventType": "CODE_ACTIVITY",
-          "publishedAt": "2026-10-02T10:58:47.000Z",
-          "detectedAt": "2026-10-01T00:16:50.907Z",
+          "publishedAt": "2026-10-09T03:36:56.000Z",
+          "detectedAt": "2026-10-07T19:37:40.027Z",
           "precision": "WEEK",
-          "evidenceId": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
+          "evidenceId": "ship:31ecea7f-01b7-4d7d-ae89-a41b20dc7b92",
           "verification": "SOURCE_LINKED",
-          "sourceUrl": "https://github.com/musepass/musepass",
+          "sourceUrl": "https://github.com/use-agent-os/agent-os",
           "codeSubstance": {
             "verdict": "SUBSTANTIVE",
             "classifierVersion": "commit-substance-v3",
             "countsAsBuilding": true,
-            "commitsListed": 222,
+            "commitsListed": 43,
             "commitsRead": 5,
             "changedCode": 3,
             "documentationOrMaintenance": 2,
             "substanceUnknown": 0,
-            "notRead": 217,
+            "notRead": 38,
             "files": {
-              "source": 7,
-              "test": 2,
-              "docs": 2,
-              "readme": 1,
+              "source": 4,
+              "test": 5,
+              "docs": 3,
+              "readme": 0,
               "dependency": 0,
-              "config": 1,
+              "config": 0,
               "ci": 0,
               "generated": 0,
               "asset": 0,
@@ -61,191 +135,136 @@
             "automatedCommits": 0,
             "sampled": true,
             "basis": null,
-            "summary": "This week HEY looked inside 5 of 222 commits to see what changed: 3 changed code, 2 documentation or maintenance only. In a burst week, enough of a sample has to change code for the week to count."
+            "summary": "This week HEY looked inside 5 of 43 commits to see what changed: 3 changed code, 2 documentation or maintenance only. In a burst week, enough of a sample has to change code for the week to count."
           },
           "codeWeek": {
-            "isoWeek": "2026-w40",
-            "start": "2026-09-28T00:00:00.000Z",
-            "end": "2026-10-05T00:00:00.000Z",
-            "repository": "musepass/musepass",
-            "commits": 222,
+            "isoWeek": "2026-w41",
+            "start": "2026-10-05T00:00:00.000Z",
+            "end": "2026-10-12T00:00:00.000Z",
+            "repository": "use-agent-os/agent-os",
+            "commits": 43,
             "commitsAtLeast": false,
-            "commitsUrl": "https://github.com/musepass/musepass/commits?since=2026-09-28T00%3A00%3A00.000Z&until=2026-10-05T00%3A00%3A00.000Z",
+            "commitsUrl": "https://github.com/use-agent-os/agent-os/commits?since=2026-10-05T00%3A00%3A00.000Z&until=2026-10-12T00%3A00%3A00.000Z",
             "highlights": [
               {
-                "subject": "Let an agent with its own wallet register a name by itself",
-                "sha": "01921565a47434d5f768af1990b57851ca055d30",
-                "committedAt": "2026-09-30T04:48:02.000Z",
+                "subject": "fix(web): bracket cards — facts wrap, a filled leg has no distance, list totals follow the rows, alert legs are the ceiling and the floor",
+                "sha": "1441db1c915ffd35ca27793e61191edaadad90d4",
+                "committedAt": "2026-10-05T08:34:09.000Z",
                 "readAsCode": true,
-                "url": "https://github.com/musepass/musepass/commit/01921565a47434d5f768af1990b57851ca055d30"
+                "url": "https://github.com/use-agent-os/agent-os/commit/1441db1c915ffd35ca27793e61191edaadad90d4"
               },
               {
-                "subject": "Deploy the API and the MCP server alongside the gateway",
-                "sha": "00c88bd3d9c94af9018424031352cce87cf60ec8",
-                "committedAt": "2026-09-29T03:52:56.000Z",
+                "subject": "fix(desktop): desk prompt v23 — protect takes no --note, --client-id or --wait",
+                "sha": "002a7daf5e9f2a3e2df6aa55502a90b17b22983c",
+                "committedAt": "2026-10-05T07:58:03.000Z",
                 "readAsCode": true,
-                "url": "https://github.com/musepass/musepass/commit/00c88bd3d9c94af9018424031352cce87cf60ec8"
+                "url": "https://github.com/use-agent-os/agent-os/commit/002a7daf5e9f2a3e2df6aa55502a90b17b22983c"
               },
               {
-                "subject": "NFT metadata: tokenURI now serves the passport image",
-                "sha": "893a1403925feac7a030e22d14f8bcee084ba7f9",
-                "committedAt": "2026-10-02T10:58:47.000Z",
-                "readAsCode": false,
-                "url": "https://github.com/musepass/musepass/commit/893a1403925feac7a030e22d14f8bcee084ba7f9"
+                "subject": "test(desktop): use a neutral .env path in the Environment pane fixture",
+                "sha": "159d19cdf1cd5705164d05f985e96219de80858e",
+                "committedAt": "2026-10-05T05:31:03.000Z",
+                "readAsCode": true,
+                "url": "https://github.com/use-agent-os/agent-os/commit/159d19cdf1cd5705164d05f985e96219de80858e"
               }
             ],
-            "title": "Code changes, week of 2026-09-28 – 2026-10-04 · 222 commits"
+            "title": "Code changes, week of 2026-10-05 – 2026-10-11 · 43 commits"
           },
           "project": {
-            "slug": "musepass-musepass",
-            "name": "musepass",
-            "shortDescription": "A passport and an account for every AI agent — ENS names that resolve in real wallets, with verifiable records",
+            "slug": "agentos",
+            "name": "AgentOS",
+            "symbol": "agentos",
             "projectKind": "OTHER",
             "activityStatus": "SHIPPING",
             "researchLevel": "VERIFIED_BUILDER",
             "catalogStatus": "VERIFIED_BUILDER",
             "stillBuilding": false,
             "stillBuildingState": "NOT_MEASURED",
-            "lastShippedAt": "2026-10-02T10:58:47.000Z",
+            "lastShippedAt": "2026-10-09T03:43:12.000Z",
             "primaryNarrative": {
-              "slug": "ai-agents",
-              "name": "AI Agents"
+              "slug": "ai",
+              "name": "AI"
             },
-            "websiteUrl": "https://musepass.xyz",
+            "token": {
+              "chainId": 4663,
+              "contractAddress": "0x6eda83fc299c10d474068a7e69771c809bcbbba3"
+            },
+            "websiteUrl": "https://useagentos.dev/",
+            "officialX": {
+              "handle": "useAgentOS",
+              "url": "https://x.com/useAgentOS"
+            },
+            "marketCap": {
+              "usd": 507590,
+              "source": "dexscreener",
+              "kind": "fdv",
+              "observedAt": "2026-10-09T03:55:20.132Z"
+            },
+            "liquidity": {
+              "usd": 350713.43,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T03:55:20.132Z",
+              "kind": "launch_inventory"
+            },
+            "volume24h": {
+              "usd": 472.05,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T03:55:20.132Z"
+            },
+            "launchStage": "DEX",
+            "tokenMarket": {
+              "status": "ACTIVE_MARKET",
+              "reason": "launch_pool_trading"
+            },
+            "tokenVerification": {
+              "status": "VERIFIED",
+              "reason": "site_names_contract"
+            },
+            "venue": "DEX",
+            "trades24h": {
+              "buys": 19,
+              "sells": 29,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T03:55:20.132Z"
+            },
+            "priceChange24hPct": -2.93,
             "hasBuilderSource": true,
-            "logoUrl": "https://avatars.githubusercontent.com/musepass",
-            "url": "https://heyresearch.xyz/project/musepass-musepass"
+            "logoUrl": "https://coin-images.coingecko.com/coins/images/102174570/small/b6b5ojnnrpnx7zs0zm302gumiizv.?1784093688",
+            "url": "https://heyresearch.xyz/project/agentos"
           },
-          "url": "https://heyresearch.xyz/project/musepass-musepass#ship-4ec70ca8-a1c9-46a2-888b-f29a4f824de1"
+          "url": "https://heyresearch.xyz/project/agentos#ship-31ecea7f-01b7-4d7d-ae89-a41b20dc7b92"
         },
         {
-          "id": "aac15ee2-5352-4de8-8f2f-5f79be8d0b34",
-          "title": "Active development: 100+ commits since 2026-09-26 across 1 contributor",
-          "summary": "5 active day(s) in builder-three/ledger-of-life since 2026-09-26; only the newest 100 commits were read.",
+          "id": "e35cd069-5795-4836-92ee-f7a21964207c",
+          "title": "Code changes, week of 2026-10-05 – 2026-10-11",
+          "summary": "16 active days in hey-research-lab/hey-research-open since 2026-09-24; only the newest 100 commits were read.",
           "eventType": "CODE_ACTIVITY",
-          "publishedAt": "2026-10-02T10:54:57.000Z",
-          "detectedAt": "2026-10-02T00:36:45.386Z",
+          "publishedAt": "2026-10-09T03:32:54.000Z",
+          "detectedAt": "2026-10-05T07:33:00.007Z",
           "precision": "WEEK",
-          "evidenceId": "ship:aac15ee2-5352-4de8-8f2f-5f79be8d0b34",
+          "evidenceId": "ship:e35cd069-5795-4836-92ee-f7a21964207c",
           "verification": "SOURCE_LINKED",
-          "sourceUrl": "https://github.com/builder-three/ledger-of-life",
+          "sourceUrl": "https://github.com/hey-research-lab/hey-research-open",
           "codeSubstance": {
             "verdict": "SUBSTANTIVE",
             "classifierVersion": "commit-substance-v3",
             "countsAsBuilding": true,
-            "commitsListed": 72,
-            "commitsRead": 4,
-            "changedCode": 3,
-            "documentationOrMaintenance": 1,
-            "substanceUnknown": 0,
-            "notRead": 68,
-            "files": {
-              "source": 8,
-              "test": 3,
-              "docs": 11,
-              "readme": 1,
-              "dependency": 1,
-              "config": 2,
-              "ci": 0,
-              "generated": 0,
-              "asset": 0,
-              "whitespace": 0,
-              "rename": 0,
-              "data": 0,
-              "unknown": 1
-            },
-            "weekFullyListed": true,
-            "automatedCommits": 0,
-            "sampled": true,
-            "basis": null,
-            "summary": "This week HEY looked inside 4 of 72 commits to see what changed: 3 changed code, 1 documentation or maintenance only. In a burst week, enough of a sample has to change code for the week to count."
-          },
-          "codeWeek": {
-            "isoWeek": "2026-w40",
-            "start": "2026-09-28T00:00:00.000Z",
-            "end": "2026-10-05T00:00:00.000Z",
-            "repository": "builder-three/ledger-of-life",
-            "commits": 72,
-            "commitsAtLeast": false,
-            "commitsUrl": "https://github.com/builder-three/ledger-of-life/commits?since=2026-09-28T00%3A00%3A00.000Z&until=2026-10-05T00%3A00%3A00.000Z",
-            "highlights": [
-              {
-                "subject": "deploy: pin image ba9e583c (70e0f1d): deposit cap, /replay, building revenue",
-                "sha": "e72341dbd8d375eca73d885b5f6035bd9326d0e7",
-                "committedAt": "2026-10-01T22:06:58.000Z",
-                "readAsCode": true,
-                "url": "https://github.com/builder-three/ledger-of-life/commit/e72341dbd8d375eca73d885b5f6035bd9326d0e7"
-              },
-              {
-                "subject": "chore: rename the repository to ledger-of-life",
-                "sha": "009a241c65c94370e2135b8ea0f3973df3546e3e",
-                "committedAt": "2026-10-01T20:12:28.000Z",
-                "readAsCode": true,
-                "url": "https://github.com/builder-three/ledger-of-life/commit/009a241c65c94370e2135b8ea0f3973df3546e3e"
-              },
-              {
-                "subject": "fix(money): Privy-signed mints and market actions match; test ETH drip",
-                "sha": "0137af417f160448f0a2a7f6a4933576cb297144",
-                "committedAt": "2026-09-30T12:17:12.000Z",
-                "readAsCode": true,
-                "url": "https://github.com/builder-three/ledger-of-life/commit/0137af417f160448f0a2a7f6a4933576cb297144"
-              }
-            ],
-            "title": "Code changes, week of 2026-09-28 – 2026-10-04 · 72 commits"
-          },
-          "project": {
-            "slug": "builder-three-ledger-of-life",
-            "name": "ledger-of-life",
-            "shortDescription": "Ledger of Life: find a home, secure the deposit, keep your assets, help build your city. Rental deposit escrow (Solana), share-backed deposits and share loans (Robinhood Chain), local GPU AI paid per token (x402), public city data. Test networks only.",
-            "projectKind": "OTHER",
-            "activityStatus": "SHIPPING",
-            "researchLevel": "VERIFIED_BUILDER",
-            "catalogStatus": "VERIFIED_BUILDER",
-            "stillBuilding": false,
-            "stillBuildingState": "NOT_MEASURED",
-            "lastShippedAt": "2026-10-02T10:54:57.000Z",
-            "primaryNarrative": {
-              "slug": "agentic-finance",
-              "name": "Agentic Finance"
-            },
-            "websiteUrl": "https://ledger.stadtstack.eu",
-            "hasBuilderSource": true,
-            "logoUrl": "https://avatars.githubusercontent.com/builder-three",
-            "url": "https://heyresearch.xyz/project/builder-three-ledger-of-life"
-          },
-          "url": "https://heyresearch.xyz/project/builder-three-ledger-of-life#ship-aac15ee2-5352-4de8-8f2f-5f79be8d0b34"
-        },
-        {
-          "id": "cd6f429d-a4e0-44b3-bc31-b56268b2a7a2",
-          "title": "Active development: 88 commits in the last 90 days across 2 contributors",
-          "summary": "6 active day(s) in builder-two/skein.",
-          "eventType": "CODE_ACTIVITY",
-          "publishedAt": "2026-10-02T10:43:23.000Z",
-          "detectedAt": "2026-10-01T21:12:50.992Z",
-          "precision": "WEEK",
-          "evidenceId": "ship:cd6f429d-a4e0-44b3-bc31-b56268b2a7a2",
-          "verification": "SOURCE_LINKED",
-          "sourceUrl": "https://github.com/builder-two/skein",
-          "codeSubstance": {
-            "verdict": "SUBSTANTIVE",
-            "classifierVersion": "commit-substance-v3",
-            "countsAsBuilding": true,
-            "commitsListed": 57,
-            "commitsRead": 3,
-            "changedCode": 3,
+            "commitsListed": 9,
+            "commitsRead": 1,
+            "changedCode": 1,
             "documentationOrMaintenance": 0,
             "substanceUnknown": 0,
-            "notRead": 54,
+            "notRead": 8,
             "files": {
-              "source": 26,
-              "test": 0,
+              "source": 0,
+              "test": 1,
               "docs": 0,
               "readme": 1,
               "dependency": 0,
               "config": 1,
               "ci": 0,
               "generated": 0,
-              "asset": 9,
+              "asset": 0,
               "whitespace": 0,
               "rename": 0,
               "data": 0,
@@ -253,63 +272,120 @@
             },
             "weekFullyListed": true,
             "automatedCommits": 0,
-            "sampled": true,
+            "sampled": false,
             "basis": null,
-            "summary": "This week HEY looked inside 3 of 57 commits to see what changed: 3 changed code. In a burst week, enough of a sample has to change code for the week to count."
+            "summary": "This week HEY looked inside 1 of 9 commits to see what changed: 1 changed code. One code change is enough for the week to count, so HEY stopped there."
           },
           "codeWeek": {
-            "isoWeek": "2026-w40",
-            "start": "2026-09-28T00:00:00.000Z",
-            "end": "2026-10-05T00:00:00.000Z",
-            "repository": "builder-two/skein",
-            "commits": 57,
+            "isoWeek": "2026-w41",
+            "start": "2026-10-05T00:00:00.000Z",
+            "end": "2026-10-12T00:00:00.000Z",
+            "repository": "hey-research-lab/hey-research-open",
+            "commits": 9,
             "commitsAtLeast": false,
-            "commitsUrl": "https://github.com/builder-two/skein/commits?since=2026-09-28T00%3A00%3A00.000Z&until=2026-10-05T00%3A00%3A00.000Z",
+            "commitsUrl": "https://github.com/hey-research-lab/hey-research-open/commits?since=2026-10-05T00%3A00%3A00.000Z&until=2026-10-12T00%3A00%3A00.000Z",
             "highlights": [
               {
-                "subject": "brand: 1920x1080 60 fps promo built from real product screens (WebCodecs, frame exact)",
-                "sha": "b3ddea5d6c7599c2e1d1e35b84513838f18c3d92",
-                "committedAt": "2026-10-01T16:58:25.000Z",
+                "subject": "Sync from HEY Research Lab (91f0e058)",
+                "sha": "8d09e55809fc4d7aae07519216f15571ac020f75",
+                "committedAt": "2026-10-05T07:26:40.000Z",
                 "readAsCode": true,
-                "url": "https://github.com/builder-two/skein/commit/b3ddea5d6c7599c2e1d1e35b84513838f18c3d92"
+                "url": "https://github.com/hey-research-lab/hey-research-open/commit/8d09e55809fc4d7aae07519216f15571ac020f75"
               },
               {
-                "subject": "brand: X profile and header images (s/ mark, terminal and lime variants)",
-                "sha": "08e8b5c5568b286dc24428e87b092d8420744c66",
-                "committedAt": "2026-10-01T14:19:38.000Z",
-                "readAsCode": true,
-                "url": "https://github.com/builder-two/skein/commit/08e8b5c5568b286dc24428e87b092d8420744c66"
+                "subject": "Sync from HEY Research Lab (644361e2)",
+                "sha": "23d0813d81edb1cba0f489977df44fb9a96274c8",
+                "committedAt": "2026-10-09T03:32:54.000Z",
+                "readAsCode": false,
+                "url": "https://github.com/hey-research-lab/hey-research-open/commit/23d0813d81edb1cba0f489977df44fb9a96274c8"
               },
               {
-                "subject": "web: terminal-style asset picker",
-                "sha": "0247404f9810fc77426ef9ea44f30aed955ced05",
-                "committedAt": "2026-10-01T12:50:52.000Z",
-                "readAsCode": true,
-                "url": "https://github.com/builder-two/skein/commit/0247404f9810fc77426ef9ea44f30aed955ced05"
+                "subject": "Sync from HEY Research Lab (966d4a6b)",
+                "sha": "b04f1acde56e3519704686c8a125d3fe5c0b34db",
+                "committedAt": "2026-10-08T23:11:45.000Z",
+                "readAsCode": false,
+                "url": "https://github.com/hey-research-lab/hey-research-open/commit/b04f1acde56e3519704686c8a125d3fe5c0b34db"
               }
             ],
-            "title": "Code changes, week of 2026-09-28 – 2026-10-04 · 57 commits"
+            "title": "Code changes, week of 2026-10-05 – 2026-10-11 · 9 commits"
           },
           "project": {
-            "slug": "builder-two-skein",
-            "name": "skein",
-            "shortDescription": "Onchain intelligence for Robinhood Chain",
-            "projectKind": "OTHER",
+            "slug": "hey-research-lab",
+            "name": "Hey Research Lab",
+            "symbol": "HEY",
+            "shortDescription": "Coordination token for HEY Research Lab, the builder-discovery layer for Robinhood Chain.",
+            "projectKind": "INFRASTRUCTURE",
             "activityStatus": "SHIPPING",
             "researchLevel": "VERIFIED_BUILDER",
             "catalogStatus": "VERIFIED_BUILDER",
             "stillBuilding": false,
             "stillBuildingState": "NOT_MEASURED",
-            "lastShippedAt": "2026-10-02T10:43:23.000Z",
+            "heysOwnToken": true,
+            "lastShippedAt": "2026-10-09T03:32:54.000Z",
             "primaryNarrative": {
-              "slug": "analytics",
-              "name": "Analytics"
+              "slug": "infrastructure",
+              "name": "Infrastructure"
             },
+            "token": {
+              "chainId": 4663,
+              "contractAddress": "0xb33eb16782776b4d738c0fd643577cb0284db610"
+            },
+            "launchedVia": {
+              "name": "Pons",
+              "url": "https://ponsfamily.com/launchpad/0xb33eb16782776b4d738c0fd643577cb0284db610"
+            },
+            "websiteUrl": "https://heyresearch.xyz",
+            "officialX": {
+              "handle": "HeyResearch",
+              "url": "https://x.com/HeyResearch"
+            },
+            "marketCap": {
+              "usd": 84562,
+              "source": "dexscreener",
+              "kind": "fdv",
+              "observedAt": "2026-10-09T04:06:20.476Z"
+            },
+            "liquidity": {
+              "usd": 26847.01,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T04:06:20.476Z",
+              "kind": "market"
+            },
+            "volume24h": {
+              "usd": 5107.49,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T04:06:20.476Z"
+            },
+            "launchStage": "DEX",
+            "tokenMarket": {
+              "status": "ACTIVE_MARKET",
+              "reason": "liquidity_and_volume"
+            },
+            "tokenVerification": {
+              "status": "VERIFIED",
+              "reason": "onchain_signature"
+            },
+            "venue": "DEX",
+            "trades24h": {
+              "buys": 11,
+              "sells": 23,
+              "source": "dexscreener",
+              "observedAt": "2026-10-09T04:06:20.476Z"
+            },
+            "tokenLock": {
+              "supplyPct": 6.177032,
+              "until": "2027-09-09",
+              "nextUnlockAt": "2027-03-22",
+              "nextUnlockPct": 3.644615,
+              "pairLocked": false,
+              "pairLockScope": "hoodlock_only"
+            },
+            "priceChange24hPct": -28.95,
             "hasBuilderSource": true,
-            "logoUrl": "https://avatars.githubusercontent.com/builder-two",
-            "url": "https://heyresearch.xyz/project/builder-two-skein"
+            "logoUrl": "https://heyresearch.xyz/apple-icon.png?5a717b8624016dc8",
+            "url": "https://heyresearch.xyz/project/hey-research-lab"
           },
-          "url": "https://heyresearch.xyz/project/builder-two-skein#ship-cd6f429d-a4e0-44b3-bc31-b56268b2a7a2"
+          "url": "https://heyresearch.xyz/project/hey-research-lab#ship-e35cd069-5795-4836-92ee-f7a21964207c"
         }
       ],
       "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown — it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."

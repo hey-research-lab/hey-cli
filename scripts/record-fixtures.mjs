@@ -7,6 +7,8 @@
 // second, no API key. Each fixture keeps the status, a small header allowlist and the body,
 // unchanged. Identifiers (a slug, a token, an evidence id) are taken from the first answers so
 // the set stays consistent; the chosen ones are written to test/fixtures/live/index.json.
+// HEY_RECORD_REUSE=1 keeps the identifiers already in index.json, so a refresh re-reads the same
+// records and the tests' expectations move only where HEY's answer did.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -51,12 +53,15 @@ async function record(name, path, params = {}, keep = true) {
 }
 
 const only = process.env.HEY_RECORD_ONLY; // 'token' re-records the by-contract pair alone
-const ids = only ? JSON.parse(readFileSync(join(OUT, 'index.json'), 'utf8')) : {};
+const reuse = process.env.HEY_RECORD_REUSE === '1';
+const ids = only || reuse ? JSON.parse(readFileSync(join(OUT, 'index.json'), 'utf8')) : {};
 if (!only) {
   const ships = await record('ships', '/api/ships', { limit: 3 });
   const first = ships.items[0];
-  ids.slug = first.project.slug;
-  ids.evidenceId = first.evidenceId;
+  if (!reuse) {
+    ids.slug = first.project.slug;
+    ids.evidenceId = first.evidenceId;
+  }
   const project = await record('project', `/api/projects/${encodeURIComponent(ids.slug)}`);
   await record('research', '/api/agent/research_project', { project: ids.slug });
   await record('unknowns', '/api/agent/unknowns', { project: ids.slug });
@@ -73,11 +78,29 @@ if (!only) {
   await record('scan-not-found', '/api/v1/scan', { chain: 4663, token: nobody });
   await record('unknowns-not-found', '/api/agent/unknowns', { project: 'hey-cli-no-such-project' });
   await record('ships-invalid-type', '/api/ships', { type: 'banana', limit: 1 });
+  // Market context HEY withholds or labels: a launch pool, and a withheld valuation.
+  const market = await record('_market', '/api/projects', { has: 'token', limit: 100 }, false);
+  const items = Array.isArray(market.items) ? market.items : [];
+  const launchPool = items.find(
+    (i) =>
+      i.tokenMarket?.status === 'ACTIVE_MARKET' && i.tokenMarket?.reason === 'launch_pool_trading',
+  );
+  const withheld = items.find((i) => typeof i.valuationWithheld === 'string');
+  ids.launchPoolSlug = launchPool?.slug ?? null;
+  ids.withheldSlug = withheld?.slug ?? null;
+  if (ids.launchPoolSlug) {
+    await record('project-launch-pool', `/api/projects/${encodeURIComponent(ids.launchPoolSlug)}`);
+  }
+  if (ids.withheldSlug) {
+    await record('project-withheld', `/api/projects/${encodeURIComponent(ids.withheldSlug)}`);
+  }
 }
 if (!only || only === 'token') {
   // A published project's token, from the catalogue (not kept as a fixture).
-  const listing = await record('_listing', '/api/projects', { has: 'token', limit: 1 }, false);
-  ids.token = listing.items[0]?.token?.contractAddress ?? null;
+  if (!reuse || !ids.token) {
+    const listing = await record('_listing', '/api/projects', { has: 'token', limit: 1 }, false);
+    ids.token = listing.items[0]?.token?.contractAddress ?? null;
+  }
   if (ids.token) {
     await record('token', `/api/token/4663/${ids.token}`);
     await record('scan', '/api/v1/scan', { chain: 4663, token: ids.token });

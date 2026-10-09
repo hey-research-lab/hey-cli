@@ -10,7 +10,7 @@
     "status": 200,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "0f8413b6-a6d8-46c1-9cd6-db3697b7998f",
+      "x-request-id": "3909ad34-dbaa-41d4-9287-792295c6fd29",
       "x-hey-api-version": "1"
     },
     "body": {
@@ -26,14 +26,15 @@
       "research_level": "VERIFIED_BUILDER",
       "activity_measured": true,
       "coverage": "measured",
-      "as_of": "2026-10-02T10:48:46.241Z",
+      "as_of": "2026-10-08T22:47:18.877Z",
       "activity": {
-        "commits_30d": 86,
+        "commits_30d": 128,
+        "commits_30d_partial": true,
         "releases_30d": 0,
-        "ships_30d": 2,
-        "meaningful_ships_30d": 2,
-        "last_ship": "2026-10-02",
-        "last_ship_title": "Active development: 86 commits in the last 90 days across 1 contributor",
+        "ships_30d": 3,
+        "meaningful_ships_30d": 3,
+        "last_ship": "2026-10-08",
+        "last_ship_title": "Code changes, week of 2026-10-05 – 2026-10-11",
         "last_ship_url": "https://github.com/priors-agents/priors"
       },
       "project": {

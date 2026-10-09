@@ -9,7 +9,7 @@
     "status": 200,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "aa3a6bc4-cdbf-40bb-863b-3eb069d2c13c",
+      "x-request-id": "b0095aac-6f2b-45a3-8e26-df3e4dd87665",
       "x-hey-api-version": "1"
     },
     "body": {
@@ -56,7 +56,7 @@
             "name": "project coverage",
             "type": "hey_record"
           },
-          "observedAt": "2026-10-02T11:36:55.097Z",
+          "observedAt": "2026-10-09T04:15:07.745Z",
           "occurredAt": null,
           "precision": null,
           "freshness": "live",
@@ -92,15 +92,15 @@
           },
           "coverageState": "NO_SOURCE",
           "reason": "no_api_description_linked",
-          "asOf": "2026-10-01T02:07:13.380Z",
+          "asOf": "2026-10-08T03:02:21.958Z",
           "detailUrl": "https://heyresearch.xyz/api/projects/musepass-musepass/coverage"
         }
       ],
       "freshness": [
         {
           "family": "builder_sources",
-          "observedAt": "2026-10-02T11:14:01.681Z",
-          "dataAsOf": "2026-10-02T11:14:01.681Z",
+          "observedAt": "2026-10-09T03:15:52.652Z",
+          "dataAsOf": "2026-10-09T03:15:52.652Z",
           "freshnessStatus": "recent",
           "staleAfterHours": 72,
           "refresh": {
@@ -112,12 +112,12 @@
               "contentOrigin": "hey"
             }
           },
-          "nextExpectedRefresh": "2026-10-02T12:14:01.681Z"
+          "nextExpectedRefresh": "2026-10-09T04:15:52.652Z"
         },
         {
           "family": "activity_score",
-          "observedAt": "2026-10-02T11:19:06.743Z",
-          "dataAsOf": "2026-10-02T11:19:06.743Z",
+          "observedAt": "2026-10-09T02:21:36.583Z",
+          "dataAsOf": "2026-10-09T02:21:36.583Z",
           "freshnessStatus": "recent",
           "staleAfterHours": 24,
           "refresh": {
@@ -129,7 +129,7 @@
               "contentOrigin": "hey"
             }
           },
-          "nextExpectedRefresh": "2026-10-02T23:19:06.743Z"
+          "nextExpectedRefresh": "2026-10-09T14:21:36.583Z"
         }
       ],
       "evidence": [],
@@ -194,7 +194,7 @@
         "capability": "unknowns",
         "schemaVersion": "1",
         "url": "https://heyresearch.xyz/api/agent/unknowns?project=musepass-musepass",
-        "asOf": "2026-10-02T11:36:55.097Z",
+        "asOf": "2026-10-09T04:15:07.745Z",
         "project": "musepass-musepass"
       },
       "boundaries": {
@@ -220,7 +220,7 @@
           "contentOrigin": "hey"
         }
       },
-      "asOf": "2026-10-02T11:36:55.097Z"
+      "asOf": "2026-10-09T04:15:07.745Z"
     }
   }
 }

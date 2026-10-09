@@ -176,6 +176,9 @@ export const pulse: CommandSpec = {
     const today = str(d.today);
     const cell = (row: Rec, key: string, usd = false) => {
       const v = num(row[key]);
+      // HEY 2026-10-09 (additive): a day's DEX volume it does not believe is withheld, with its reason.
+      if (v === undefined && key === 'dexVolumeUsd' && str(row.dexVolumeWithheld))
+        return 'withheld';
       return v === undefined ? 'unknown' : usd ? fmtUsd(v) : fmtCount(v);
     };
     return {
@@ -223,6 +226,14 @@ export const pulse: CommandSpec = {
             ...CHAIN_COLUMNS.map(([key, , usd]) => cell(row, key, usd)),
           ]),
         );
+        const withheld = days.map((row) => str(row.dexVolumeWithheld)).find((v) => v !== undefined);
+        if (withheld) {
+          out.line(
+            out.dim(
+              `"withheld": HEY holds a DEX volume reading for the day and does not publish it (${out.text(withheld, 60)}).`,
+            ),
+          );
+        }
         for (const note of [d.volumeNote, d.launchesNote]) {
           const n = str(note);
           if (n) out.line(out.dim(out.text(n, 600)));
@@ -321,7 +332,7 @@ export const changes: CommandSpec = {
   details: [
     "--since filters the event's own time (occurredAt). Events HEY could not date from a source (occurredAt null, precision OBSERVED) are left out by --since; without --since they are listed as undated.",
     'A retraction is a tombstone: it carries only its id.',
-    "HEY drops an unreadable filter value silently; the CLI checks HEY's query echo and refuses an answer whose --since was dropped (filter_dropped, exit 3).",
+    'HEY refuses a filter value it cannot read (invalid_parameter, exit 3), and a cursor past the end of the ledger (invalid_cursor). The CLI still checks the query echo and refuses an answer whose --since is missing from it (filter_dropped, exit 3).',
   ],
   positionals: [{ name: 'slug', optional: true }],
   limit: { max: 100, note: '1–100; HEY defaults to 50' },

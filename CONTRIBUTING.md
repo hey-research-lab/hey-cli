@@ -42,6 +42,8 @@ Node.js 22+, pnpm 9.15.1.
 
 ```sh
 HEY_LIVE=1 node scripts/record-fixtures.mjs
+# keep the same slug, token and evidence id as test/fixtures/live/index.json:
+HEY_LIVE=1 HEY_RECORD_REUSE=1 node scripts/record-fixtures.mjs
 ```
 
 About twenty read-only GETs on public routes, at most one per second, no API key. Never run it in
@@ -55,5 +57,6 @@ offensive or wallet-flavoured project names with neutral placeholders (`builder-
 The chain constants (`src/chain.ts`), the address rules (`src/evm.ts`), the exit codes and the
 `hey.cli/v1` envelope follow the HEY Research Lab ecosystem conventions shared by every repository
 in the organisation. The command-to-endpoint map, the error envelope and the state vocabularies
-were checked against HEY Research Lab's production contract at `21775391`
-(21775391f6c0fb4494575e0b4463df535c65cb96); the fixtures were recorded from the live API on 2026-10-02.
+were last checked against HEY Research Lab's public contract — the OpenAPI document at
+https://heyresearch.xyz/openapi.json and the reference at https://heyresearch.xyz/docs/public-api —
+on 2026-10-09; the fixtures were re-recorded from the live API the same day.

@@ -9,13 +9,13 @@
     "status": 200,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "de109c7f-384b-4636-b617-166945b96b8d",
+      "x-request-id": "61e19fb8-159d-4bcb-a4e8-415a2d7dda39",
       "x-hey-api-version": "1"
     },
     "body": {
-      "day": "2026-10-02",
-      "ranked": 738,
-      "total": 738,
+      "day": "2026-10-09",
+      "ranked": 807,
+      "total": 801,
       "query": {
         "filter": "all",
         "limit": 3,
@@ -25,77 +25,45 @@
       "items": [
         {
           "rank": 1,
-          "rank7d": 1,
-          "slug": "projectvex",
-          "name": "ProjectVex",
-          "symbol": "VEX",
-          "logoUrl": "https://s3.ap-southeast-1.amazonaws.com/virtualprotocolcdn/96200_Project_Vex_ca4b84436d.png",
-          "activityStatus": "ACTIVE",
+          "rank7d": 5,
+          "slug": "loom",
+          "name": "Loom",
+          "symbol": "LOOM",
+          "logoUrl": "https://coin-images.coingecko.com/coins/images/102178580/large/aC8BpUYj_400x400.jpg?1790085575",
+          "activityStatus": "SHIPPING",
           "catalogStatus": "VERIFIED_BUILDER",
-          "launchpad": "Virtuals",
-          "firstSeenAt": "2026-07-03T16:34:58.003Z",
-          "lastShippedAt": "2026-09-24T22:57:38.000Z",
+          "launchpad": "Pons",
+          "firstSeenAt": "2026-09-17T01:09:28.961Z",
+          "lastShippedAt": "2026-10-08T22:18:18.000Z",
           "scores": {
-            "overall": 84.46,
-            "development": 79.3,
-            "onchain": 89.56,
+            "overall": 82.62,
+            "development": 75,
+            "onchain": 94.35,
             "research": 100
           },
-          "onchainUse": 89.56,
-          "liquidityHealth": 100,
+          "onchainUse": 94.35,
+          "liquidityHealth": 60,
           "inputs": {
-            "hbm": 79.3,
-            "events7d": 3007,
+            "hbm": 75,
+            "events7d": 928,
             "marketStatus": "ACTIVE_MARKET",
             "onchainState": "MEASURED",
             "catalogStatus": "VERIFIED_BUILDER",
             "researchLevel": "VERIFIED_BUILDER",
             "tokenVerified": true,
-            "hbmScoringVersion": "hbm-v22",
-            "followupDeploys30d": 0
+            "hbmScoringVersion": "hbm-v25",
+            "followupDeploys30d": 38
           },
-          "url": "https://heyresearch.xyz/project/projectvex"
+          "url": "https://heyresearch.xyz/project/loom"
         },
         {
           "rank": 2,
-          "rank7d": 361,
-          "slug": "ekubo-stock-liquidity-token",
-          "name": "Ekubo Stock Liquidity Token",
-          "symbol": "stonx",
-          "logoUrl": "https://coin-images.coingecko.com/coins/images/102176618/small/stonx.png?1788348513",
-          "activityStatus": "SHIPPING",
-          "catalogStatus": "VERIFIED_BUILDER",
-          "firstSeenAt": "2026-09-14T20:21:33.907Z",
-          "lastShippedAt": "2026-10-01T17:40:03.000Z",
-          "scores": {
-            "overall": 81.57,
-            "development": 81.7,
-            "onchain": 67.31,
-            "research": 100
-          },
-          "onchainUse": 67.31,
-          "liquidityHealth": 80,
-          "inputs": {
-            "hbm": 81.7,
-            "events7d": 232,
-            "marketStatus": "ACTIVE_MARKET",
-            "onchainState": "MEASURED",
-            "catalogStatus": "VERIFIED_BUILDER",
-            "researchLevel": "VERIFIED_BUILDER",
-            "tokenVerified": true,
-            "hbmScoringVersion": "hbm-v22",
-            "followupDeploys30d": 0
-          },
-          "url": "https://heyresearch.xyz/project/ekubo-stock-liquidity-token"
-        },
-        {
-          "rank": 3,
-          "rank7d": 2,
+          "rank7d": 4,
           "slug": "pare",
           "name": "Pare",
           "symbol": "pare",
           "logoUrl": "https://cdn.dexscreener.com/cms/images/i4ydR6RjqWkkhEE8?width=64&height=64&fit=crop&quality=95&format=auto",
-          "activityStatus": "SHIPPING",
+          "activityStatus": "ACTIVE",
           "catalogStatus": "VERIFIED_BUILDER",
           "launchpad": "Pons",
           "firstSeenAt": "2026-09-05T00:43:53.598Z",
@@ -110,16 +78,47 @@
           "liquidityHealth": 60,
           "inputs": {
             "hbm": 70.8,
-            "events7d": 3290,
+            "events7d": 1877,
             "marketStatus": "ACTIVE_MARKET",
             "onchainState": "MEASURED",
             "catalogStatus": "VERIFIED_BUILDER",
             "researchLevel": "VERIFIED_BUILDER",
             "tokenVerified": true,
-            "hbmScoringVersion": "hbm-v22",
-            "followupDeploys30d": 30
+            "hbmScoringVersion": "hbm-v25",
+            "followupDeploys30d": 17
           },
           "url": "https://heyresearch.xyz/project/pare"
+        },
+        {
+          "rank": 3,
+          "slug": "agentos",
+          "name": "AgentOS",
+          "symbol": "agentos",
+          "logoUrl": "https://coin-images.coingecko.com/coins/images/102174570/small/b6b5ojnnrpnx7zs0zm302gumiizv.?1784093688",
+          "activityStatus": "SHIPPING",
+          "catalogStatus": "VERIFIED_BUILDER",
+          "firstSeenAt": "2026-09-12T16:34:29.797Z",
+          "lastShippedAt": "2026-10-09T03:43:12.000Z",
+          "scores": {
+            "overall": 80.32,
+            "development": 81.7,
+            "onchain": 61.06,
+            "research": 100
+          },
+          "onchainUse": 61.06,
+          "liquidityHealth": 100,
+          "inputs": {
+            "hbm": 81.7,
+            "events7d": 113,
+            "marketStatus": "ACTIVE_MARKET",
+            "onchainState": "MEASURED",
+            "catalogStatus": "VERIFIED_BUILDER",
+            "researchLevel": "VERIFIED_BUILDER",
+            "tokenVerified": true,
+            "hbmScoringVersion": "hbm-v25",
+            "followupDeploys30d": 0
+          },
+          "url": "https://heyresearch.xyz/project/agentos"
         }
       ],
       "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown — it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."

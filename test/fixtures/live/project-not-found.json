@@ -7,14 +7,14 @@
     "status": 404,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "d87bb5c8-722f-4d83-88e2-9d518ba6df08",
+      "x-request-id": "4a47241c-e08c-4fd0-ab93-d332c2138f3f",
       "x-hey-api-version": "1"
     },
     "body": {
       "error": "not_found",
       "message": "No published project has the slug \"hey-cli-no-such-project\".",
       "retryable": false,
-      "requestId": "d87bb5c8-722f-4d83-88e2-9d518ba6df08"
+      "requestId": "4a47241c-e08c-4fd0-ab93-d332c2138f3f"
     }
   }
 }

@@ -7,7 +7,7 @@
     "status": 200,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "43b4ee75-5724-4467-a395-2c78f15755e3",
+      "x-request-id": "469c7ae4-3b1f-4dc0-a8a5-21e44b5ab82b",
       "x-hey-api-version": "1"
     },
     "body": {
@@ -20,7 +20,7 @@
       "catalogStatus": "VERIFIED_BUILDER",
       "stillBuilding": false,
       "stillBuildingState": "NOT_MEASURED",
-      "lastShippedAt": "2026-10-02T10:58:47.000Z",
+      "lastShippedAt": "2026-10-02T14:13:07.000Z",
       "primaryNarrative": {
         "slug": "ai-agents",
         "name": "AI Agents"
@@ -32,10 +32,10 @@
       "ships": [
         {
           "id": "4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
-          "title": "Active development: 122 commits in the last 90 days across 1 contributor",
-          "summary": "5 active day(s) in musepass/musepass.",
+          "title": "Code changes, week of 2026-09-28 – 2026-10-04",
+          "summary": "5 active days in musepass/musepass.",
           "eventType": "CODE_ACTIVITY",
-          "publishedAt": "2026-10-02T10:58:47.000Z",
+          "publishedAt": "2026-10-02T14:13:07.000Z",
           "detectedAt": "2026-10-01T00:16:50.907Z",
           "precision": "WEEK",
           "evidenceId": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
@@ -45,12 +45,12 @@
             "verdict": "SUBSTANTIVE",
             "classifierVersion": "commit-substance-v3",
             "countsAsBuilding": true,
-            "commitsListed": 222,
+            "commitsListed": 225,
             "commitsRead": 5,
             "changedCode": 3,
             "documentationOrMaintenance": 2,
             "substanceUnknown": 0,
-            "notRead": 217,
+            "notRead": 220,
             "files": {
               "source": 7,
               "test": 2,
@@ -70,7 +70,7 @@
             "automatedCommits": 0,
             "sampled": true,
             "basis": null,
-            "summary": "This week HEY looked inside 5 of 222 commits to see what changed: 3 changed code, 2 documentation or maintenance only. In a burst week, enough of a sample has to change code for the week to count."
+            "summary": "This week HEY looked inside 5 of 225 commits to see what changed: 3 changed code, 2 documentation or maintenance only. In a burst week, enough of a sample has to change code for the week to count."
           },
           "project": {
             "slug": "musepass-musepass",
@@ -82,7 +82,7 @@
             "catalogStatus": "VERIFIED_BUILDER",
             "stillBuilding": false,
             "stillBuildingState": "NOT_MEASURED",
-            "lastShippedAt": "2026-10-02T10:58:47.000Z",
+            "lastShippedAt": "2026-10-02T14:13:07.000Z",
             "primaryNarrative": {
               "slug": "ai-agents",
               "name": "AI Agents"
@@ -178,6 +178,13 @@
           "contextOnly": false
         },
         {
+          "url": "https://musepass.xyz/docs/reference/mcp",
+          "sourceType": "DOCS",
+          "isVerified": false,
+          "confidence": "AUTHORITATIVE_LINK",
+          "contextOnly": false
+        },
+        {
           "url": "https://musepass.xyz/docs/start/agents",
           "sourceType": "DOCS",
           "isVerified": false,
@@ -221,13 +228,13 @@
         }
       ],
       "score": {
-        "buildMomentum": 24.7,
+        "buildMomentum": 23,
         "discoveryGapWithheld": "no_token",
         "stillBuilding": false,
         "stillBuildingState": "NOT_MEASURED",
-        "stillBuildingWithheld": "no_token",
-        "calculatedAt": "2026-10-02T11:19:06.743Z",
-        "scoringVersion": "hbm-v22"
+        "stillBuildingWithheld": "not_scored",
+        "calculatedAt": "2026-10-09T02:21:36.583Z",
+        "scoringVersion": "hbm-v25"
       },
       "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown — it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."
     }

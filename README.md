@@ -87,7 +87,11 @@ prints each command's endpoint, options and caveats.
 The project dossier: activity status, last ship with its source and verification state, research
 level, Still Building state with its reason, Build Momentum, the token identity and its
 verification. A market figure is printed only when HEY holds one, labelled as context with its
-source and reading time.
+source and reading time. A market that is only the token's launch pool prints "Launch pool only"
+and no figure, as every HEY surface does; a valuation HEY withholds prints "valuation withheld"
+with HEY's reason code (`launch_pool_no_trades`, `valuation_over_liquidity`,
+`chain_evidence_contradicts`, `sources_disagree`, …); and when a second source prices the token
+more than 2× away, the line under the figure says so.
 
 ```sh
 hey project hey-research-lab
@@ -122,6 +126,9 @@ The partner card for a contract: status in HEY's words, verified builder, token 
 coverage, 30-day commits/releases/ships and the last ship. It is a read of HEY's published
 records; the card's `scan_url` opens the site's scan page in a browser. `commits_30d` is absent
 when HEY reads no repository for the project, and `hey` prints that as "not measured", never 0.
+On `found: false` it also prints what HEY holds for the token — `indexed`, `research_state`
+(`not_researched`, `not_published`, `not_indexed`) and `launched_via` when HEY sends them — which
+is never a verdict on the token.
 
 ```sh
 hey scan 0x…
@@ -160,9 +167,9 @@ hey builders --limit 20
 
 The change ledger, newest first — chain-wide, or one project's. `--since` filters the event's own
 time (`occurredAt`): events HEY could not date from a source (`occurredAt: null`, precision
-`OBSERVED`) are left out by `--since`. HEY drops an unreadable filter value silently, so `hey`
-checks the answer's query echo and refuses (exit 3, `filter_dropped`) rather than print an
-unfiltered feed as a filtered one.
+`OBSERVED`) are left out by `--since`. HEY refuses a filter value it cannot read
+(`invalid_parameter`, exit 3); `hey` also checks the answer's query echo and refuses (exit 3,
+`filter_dropped`) rather than ever print an unfiltered feed as a filtered one.
 
 ```sh
 hey changes hey-research-lab --limit 20
@@ -196,7 +203,8 @@ hey evidence ship:<uuid>
 Robinhood Chain day by day. **An alias of `GET /api/chain`** — HEY has no pulse endpoint. HEY's
 own counts (launches recorded, projects published, ships, builders shipping, builders verified)
 are printed apart from the chain and market aggregates (transactions, transfers, DEX trades and
-volume), which come from providers and are context only. The day in progress is marked partial.
+volume), which come from providers and are context only. The day in progress is marked partial,
+and a day's DEX volume HEY withholds as implausible prints "withheld", never 0.
 
 ```sh
 hey pulse --days 7

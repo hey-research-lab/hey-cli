@@ -57,6 +57,9 @@ describe('not found is exit 4, and an answer is never an error', () => {
     );
     expect(r.code).toBe(4);
     expect(r.stdout).toContain('HEY holds no published project');
+    // HEY 2026-10-09 (additive): what HEY holds for the token, beside scan_url.
+    expect(r.stdout).toMatch(/Held by HEY\s+no/);
+    expect(r.stdout).toMatch(/Research state\s+not_indexed/);
   });
 
   it('project: a 404 is exit 4 with the API code, message and request id', async () => {
@@ -72,7 +75,7 @@ describe('not found is exit 4, and an answer is never an error', () => {
       code: 'not_found',
       message: 'No published project has the slug "hey-cli-no-such-project".',
       retryable: false,
-      requestId: 'd87bb5c8-722f-4d83-88e2-9d518ba6df08',
+      requestId: loadFixture('project-not-found').response.headers['x-request-id'],
     });
   });
 
@@ -83,7 +86,9 @@ describe('not found is exit 4, and an answer is never an error', () => {
     expect(r.stderr).toContain(
       'HEY holds no published project with the slug "hey-cli-no-such-project". (not_found)',
     );
-    expect(r.stderr).toContain('request id 6e8e1a52-7f03-41da-93be-da4ab38a2eb0');
+    expect(r.stderr).toContain(
+      `request id ${loadFixture('unknowns-not-found').response.headers['x-request-id']}`,
+    );
   });
 
   it('evidence: a withdrawn record is an answer, exit 0', async () => {

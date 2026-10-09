@@ -7,7 +7,7 @@
     "status": 200,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "f5a094fc-8057-4ad8-abeb-95bc1f73f9a6",
+      "x-request-id": "fc662194-e326-492c-94c0-454b4621458c",
       "x-hey-api-version": "1"
     },
     "body": {
@@ -20,10 +20,10 @@
       },
       "domain": "build",
       "claimType": "CODE_ACTIVITY",
-      "summary": "Active development: 122 commits in the last 90 days across 1 contributor",
+      "summary": "Code changes, week of 2026-09-28 – 2026-10-04",
       "sourceType": "github",
       "sourceUrl": "https://github.com/musepass/musepass",
-      "publishedAt": "2026-10-02T10:58:47.000Z",
+      "publishedAt": "2026-10-02T14:13:07.000Z",
       "detectedAt": "2026-10-01T00:16:50.907Z",
       "precision": "WEEK",
       "window": {
@@ -39,7 +39,7 @@
         "start": "2026-09-28T00:00:00.000Z",
         "end": "2026-10-05T00:00:00.000Z",
         "repository": "musepass/musepass",
-        "commits": 222,
+        "commits": 225,
         "commitsAtLeast": false,
         "commitsUrl": "https://github.com/musepass/musepass/commits?since=2026-09-28T00%3A00%3A00.000Z&until=2026-10-05T00%3A00%3A00.000Z",
         "highlights": [
@@ -58,20 +58,20 @@
             "url": "https://github.com/musepass/musepass/commit/00c88bd3d9c94af9018424031352cce87cf60ec8"
           },
           {
-            "subject": "NFT metadata: tokenURI now serves the passport image",
-            "sha": "893a1403925feac7a030e22d14f8bcee084ba7f9",
-            "committedAt": "2026-10-02T10:58:47.000Z",
+            "subject": "Metrics: D1/D7 retention, sponsor gas balance, and a health check that watched the wrong wallet",
+            "sha": "4497ec65389d75c03e3a3a2bf5eeb5a486a69af1",
+            "committedAt": "2026-10-02T14:13:07.000Z",
             "readAsCode": false,
-            "url": "https://github.com/musepass/musepass/commit/893a1403925feac7a030e22d14f8bcee084ba7f9"
+            "url": "https://github.com/musepass/musepass/commit/4497ec65389d75c03e3a3a2bf5eeb5a486a69af1"
           }
         ],
-        "title": "Code changes, week of 2026-09-28 – 2026-10-04 · 222 commits"
+        "title": "Code changes, week of 2026-09-28 – 2026-10-04 · 225 commits"
       },
       "verification": "SOURCE_LINKED",
       "countsAsBuilding": true,
       "recordedAt": "2026-10-01T00:16:50.907Z",
       "metadata": {
-        "summary": "5 active day(s) in musepass/musepass.",
+        "summary": "5 active days in musepass/musepass.",
         "prerelease": false
       },
       "sources": [
@@ -82,10 +82,10 @@
           "observedAt": "2026-10-01T00:16:50.907Z",
           "metadata": {
             "truncated": false,
-            "windowEnd": "2026-10-02T11:14:01.681Z",
+            "windowEnd": "2026-10-09T03:15:52.652Z",
             "activeDays": 5,
-            "commitCount": 122,
-            "windowStart": "2026-07-04T11:14:01.681Z",
+            "commitCount": 125,
+            "windowStart": "2026-07-11T03:15:52.652Z",
             "weekFullyListed": true,
             "contributorCount": 1
           }

@@ -121,7 +121,7 @@ export const scan: CommandSpec = {
   endpoint: 'GET /api/v1/scan?chain=4663&token={address}',
   details: [
     "A database read of HEY's published records. It never triggers the site's live scan; the card's scan_url opens that page in a browser.",
-    'found: false (no published project) is exit 4, not an error.',
+    'found: false (no published project) is exit 4, not an error; HEY then says whether it holds the token (indexed, research_state, launched_via).',
     'commits_30d is absent when HEY reads no repository for the project: that is "not measured", never 0.',
   ],
   positionals: [{ name: 'address' }],
@@ -150,6 +150,13 @@ export const scan: CommandSpec = {
           const message = str(d.message);
           if (message) out.line(out.text(message, 300));
           out.line('That is not a finding about the contract: HEY does not know it as a project.');
+          // HEY 2026-10-09 (additive, beside scan_url): what HEY holds for the token. Never a verdict.
+          const indexed = bool(d.indexed);
+          if (indexed !== undefined) {
+            out.kv('Held by HEY', indexed ? 'yes, as a token (not a published project)' : 'no');
+          }
+          if (str(d.research_state)) out.kv('Research state', word(out, d.research_state));
+          if (str(d.launched_via)) out.kv('Launched via', out.text(str(d.launched_via) ?? '', 60));
           const scanUrl = link(d.scan_url);
           if (scanUrl) out.kv('Scan on HEY', scanUrl);
           footer(out, d.disclaimer);

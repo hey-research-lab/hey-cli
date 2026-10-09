@@ -91,12 +91,36 @@ export const project: CommandSpec = {
         }
         const cap = rec(p.marketCap);
         const usd = num(cap.usd);
-        if (usd !== undefined) {
+        const tokenMarket = rec(p.tokenMarket);
+        const withheld = str(p.valuationWithheld);
+        if (
+          str(tokenMarket.status) === 'ACTIVE_MARKET' &&
+          str(tokenMarket.reason) === 'launch_pool_trading'
+        ) {
+          // HEY 2026-10-02/09: a launch pool is not a measured market; every HEY surface prints
+          // "Launch pool only" and no figure (its "liquidity" is the token's own supply).
+          out.kv(
+            'Market context',
+            "Launch pool only — the token's only pool is the one it launched in; its liquidity is the token's own supply, so no valuation is printed (context only)",
+          );
+        } else if (usd !== undefined) {
           const kind = str(cap.kind) === 'fdv' ? 'FDV' : 'Market cap';
           const observed = when(cap.observedAt);
           out.kv(
             'Market context',
             `${kind} ${fmtUsd(usd)} · source ${out.text(str(cap.source) ?? 'unknown', 40)} · observed ${observed} (context only)`,
+          );
+          const disagree = rec(rec(p.market).sourcesDisagree);
+          if (str(disagree.source)) {
+            out.kv(
+              '',
+              `sources disagree: ${out.text(str(disagree.source) ?? '', 40)} prices it more than 2× away (observed ${when(disagree.observedAt)}); the figure is this reading's, not a settled fact`,
+            );
+          }
+        } else if (withheld) {
+          out.kv(
+            'Market context',
+            `valuation withheld — ${out.text(withheld, 60)} (HEY holds a reading it does not publish)`,
           );
         }
         const sources = list(p.sources).map(rec);

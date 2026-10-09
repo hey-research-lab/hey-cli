@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## 0.1.3 — 2026-10-09
+
+Kept in step with HEY's public API as of 2026-10-09. `--json` is unchanged: it relays HEY's answer as sent.
+
+- `hey project`: a market that is only the token's launch pool (`launch_pool_trading`) prints "Launch pool only" and no valuation, as every HEY surface does; a valuation HEY withholds prints "valuation withheld — <reason>" instead of nothing; a second source pricing the token more than 2× away (`market.sourcesDisagree`) is named under the figure.
+- `hey scan` on `found: false` prints the card's additive `indexed`, `research_state` and `launched_via`. `--quiet` is unchanged (`not_found`).
+- `hey pulse` prints a day's DEX volume HEY withholds (`dexVolumeWithheld`) as "withheld" with its reason, never "unknown" or 0.
+- `hey changes` help and README: HEY now refuses an unreadable filter value (`invalid_parameter`) instead of dropping it; the query-echo guard stays.
+- Test fixtures re-recorded from production on 2026-10-09 (`scripts/record-fixtures.mjs` gains `HEY_RECORD_REUSE=1` to keep the same records, and records a launch-pool and a withheld-valuation dossier).
+
 ## 0.1.2 — 2026-10-03
 
 - `hey token` on a Robinhood stock token prints HEY's sentence — "Robinhood stock token: NVIDIA (NVDA) — issued by Robinhood, not a project on HEY." — from the additive `issuer` field; `--quiet` prints `unknown issuer_token`. Exit 4 as before. `--json` relays the field as sent.

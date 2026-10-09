@@ -10,7 +10,7 @@
     "status": 200,
     "headers": {
       "content-type": "application/json",
-      "x-request-id": "8f0f754a-3ded-4620-a7d6-22f707bd4759",
+      "x-request-id": "d846e923-bac5-4ac8-bd09-3143c0a338de",
       "x-hey-api-version": "1"
     },
     "body": {
@@ -21,52 +21,79 @@
       },
       "items": [
         {
-          "id": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
-          "revision": 9,
+          "id": "sourcechange:25cfe35d-80d9-47ce-9558-981ac807dc7b",
+          "revision": 1,
           "op": "upsert",
-          "type": "build.code_activity",
-          "domain": "build",
+          "type": "research.source_changed",
+          "domain": "research",
           "origin": "live",
           "project": {
             "slug": "musepass-musepass",
             "name": "musepass",
             "url": "https://heyresearch.xyz/project/musepass-musepass"
           },
-          "occurredAt": "2026-10-02T10:58:47.000Z",
-          "precision": "WEEK",
-          "detectedAt": "2026-10-01T00:16:50.907Z",
-          "recordedAt": "2026-10-02T11:15:22.569Z",
-          "summary": "Active development: 122 commits in the last 90 days across 1 contributor",
+          "occurredAt": null,
+          "precision": "OBSERVED",
+          "detectedAt": "2026-10-07T20:02:41.346Z",
+          "recordedAt": "2026-10-07T20:06:04.014Z",
+          "summary": "Links the official site declares changed: 9 added, 5 removed",
           "evidence": [
             {
-              "id": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
-              "url": "https://github.com/musepass/musepass",
-              "label": "GitHub"
+              "id": "sourcechange:25cfe35d-80d9-47ce-9558-981ac807dc7b",
+              "url": "https://musepass.xyz/docs",
+              "label": "Official site"
             }
           ],
-          "source": "github",
-          "countsAsBuilding": true,
+          "source": "official_site",
           "facts": {
-            "eventType": "CODE_ACTIVITY",
-            "commitsRead": 5,
-            "verification": "SOURCE_LINKED",
-            "codeSubstance": "SUBSTANTIVE",
-            "commitsListed": 222,
-            "commitsNotRead": 217,
-            "commitsChangedCode": 3,
-            "codeSubstanceVersion": "commit-substance-v3",
-            "commitsSubstanceUnknown": 0,
-            "commitsDocumentationOrMaintenance": 2
+            "kind": "DECLARED_LINKS",
+            "added": 9,
+            "removed": 5,
+            "previousReadAt": "2026-10-01T00:26:12.584Z"
           },
           "links": {
             "project": "https://heyresearch.xyz/project/musepass-musepass",
-            "evidence": "https://heyresearch.xyz/api/evidence/ship%3A4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
+            "evidence": "https://heyresearch.xyz/api/evidence/sourcechange%3A25cfe35d-80d9-47ce-9558-981ac807dc7b",
+            "timeline": "https://heyresearch.xyz/api/projects/musepass-musepass/timeline"
+          }
+        },
+        {
+          "id": "source:0024ace9-b9f8-43f0-9af0-191008f0a18f:added",
+          "revision": 1,
+          "op": "upsert",
+          "type": "research.source_added",
+          "domain": "research",
+          "origin": "live",
+          "project": {
+            "slug": "musepass-musepass",
+            "name": "musepass",
+            "url": "https://heyresearch.xyz/project/musepass-musepass"
+          },
+          "occurredAt": null,
+          "precision": "OBSERVED",
+          "detectedAt": "2026-10-07T20:05:15.661Z",
+          "recordedAt": "2026-10-07T20:06:04.014Z",
+          "summary": "Official source added: docs",
+          "evidence": [
+            {
+              "id": "source:0024ace9-b9f8-43f0-9af0-191008f0a18f",
+              "url": "https://musepass.xyz/docs/reference/mcp",
+              "label": "Docs"
+            }
+          ],
+          "source": "website_crawl",
+          "facts": {
+            "sourceType": "DOCS"
+          },
+          "links": {
+            "project": "https://heyresearch.xyz/project/musepass-musepass",
+            "evidence": "https://heyresearch.xyz/api/evidence/source%3A0024ace9-b9f8-43f0-9af0-191008f0a18f",
             "timeline": "https://heyresearch.xyz/api/projects/musepass-musepass/timeline"
           }
         },
         {
           "id": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
-          "revision": 8,
+          "revision": 13,
           "op": "upsert",
           "type": "build.code_activity",
           "domain": "build",
@@ -76,11 +103,11 @@
             "name": "musepass",
             "url": "https://heyresearch.xyz/project/musepass-musepass"
           },
-          "occurredAt": "2026-10-02T09:47:36.000Z",
+          "occurredAt": "2026-10-02T14:13:07.000Z",
           "precision": "WEEK",
           "detectedAt": "2026-10-01T00:16:50.907Z",
-          "recordedAt": "2026-10-02T09:55:00.141Z",
-          "summary": "Active development: 121 commits in the last 90 days across 1 contributor",
+          "recordedAt": "2026-10-03T09:40:09.410Z",
+          "summary": "Code changes, week of 2026-09-28 – 2026-10-04",
           "evidence": [
             {
               "id": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
@@ -95,52 +122,8 @@
             "commitsRead": 5,
             "verification": "SOURCE_LINKED",
             "codeSubstance": "SUBSTANTIVE",
-            "commitsListed": 221,
-            "commitsNotRead": 216,
-            "commitsChangedCode": 3,
-            "codeSubstanceVersion": "commit-substance-v3",
-            "commitsSubstanceUnknown": 0,
-            "commitsDocumentationOrMaintenance": 2
-          },
-          "links": {
-            "project": "https://heyresearch.xyz/project/musepass-musepass",
-            "evidence": "https://heyresearch.xyz/api/evidence/ship%3A4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
-            "timeline": "https://heyresearch.xyz/api/projects/musepass-musepass/timeline"
-          }
-        },
-        {
-          "id": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
-          "revision": 7,
-          "op": "upsert",
-          "type": "build.code_activity",
-          "domain": "build",
-          "origin": "live",
-          "project": {
-            "slug": "musepass-musepass",
-            "name": "musepass",
-            "url": "https://heyresearch.xyz/project/musepass-musepass"
-          },
-          "occurredAt": "2026-10-02T07:17:17.000Z",
-          "precision": "WEEK",
-          "detectedAt": "2026-10-01T00:16:50.907Z",
-          "recordedAt": "2026-10-02T08:20:03.607Z",
-          "summary": "Active development: 118 commits in the last 90 days across 1 contributor",
-          "evidence": [
-            {
-              "id": "ship:4ec70ca8-a1c9-46a2-888b-f29a4f824de1",
-              "url": "https://github.com/musepass/musepass",
-              "label": "GitHub"
-            }
-          ],
-          "source": "github",
-          "countsAsBuilding": true,
-          "facts": {
-            "eventType": "CODE_ACTIVITY",
-            "commitsRead": 5,
-            "verification": "SOURCE_LINKED",
-            "codeSubstance": "SUBSTANTIVE",
-            "commitsListed": 218,
-            "commitsNotRead": 213,
+            "commitsListed": 225,
+            "commitsNotRead": 220,
             "commitsChangedCode": 3,
             "codeSubstanceVersion": "commit-substance-v3",
             "commitsSubstanceUnknown": 0,
@@ -153,13 +136,13 @@
           }
         }
       ],
-      "nextCursor": "YzEuNTM3MjM",
+      "nextCursor": "YzEuNjQ3NzY",
       "hasMore": true,
       "ledger": {
         "collectionStart": "2026-09-26T11:35:57.227Z",
         "transitionsFrom": "2026-09-26T11:32:48.791Z",
-        "newestRecordedAt": "2026-10-02T11:35:02.091Z",
-        "projectorRanAt": "2026-10-02T11:35:02.091Z"
+        "newestRecordedAt": "2026-10-09T04:10:05.043Z",
+        "projectorRanAt": "2026-10-09T04:10:05.043Z"
       },
       "disclaimer": "Public, source-backed activity HEY recorded. Still Building means verified activity through a tracked market drawdown — it is not a prediction, not a ranking by price, and not investment advice. Few projects meet Still Building or Under the Radar at any time; both are strict by design, and list responses carry the counts."
     }
