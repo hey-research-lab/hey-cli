@@ -2,7 +2,8 @@ import { CHAIN_ID, UnsupportedChainError } from './chain.js';
 import { usageError } from './errors.js';
 import { checksumMatches, DEAD_ADDRESS, ZERO_ADDRESS } from './evm.js';
 
-const SLUG_RE = /^[a-z0-9][a-z0-9-]{0,119}$/;
+/** HEY's request rule for a project slug: at most 80 characters, as OpenAPI and the agent contract's requests take it. */
+const SLUG_RE = /^[a-z0-9][a-z0-9-]{0,79}$/;
 const CAIP10_RE = /^eip155:([^:]+):(.+)$/;
 const LOOSE_ADDRESS_RE = /^0[xX][0-9a-fA-F]{40}$/;
 

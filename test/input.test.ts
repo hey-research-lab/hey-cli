@@ -51,6 +51,9 @@ describe('slugs, ids, dates', () => {
   it('slugs are lowercased and validated', () => {
     expect(parseSlug('MusePass-MusePass')).toBe('musepass-musepass');
     expect(() => parseSlug('-x')).toThrow();
+    // HEY's request rule: 80 characters at most (OpenAPI).
+    expect(parseSlug(`a${'b'.repeat(79)}`)).toHaveLength(80);
+    expect(() => parseSlug(`a${'b'.repeat(80)}`)).toThrow();
     expect(() => parseSlug('../etc/passwd')).toThrow();
   });
 
