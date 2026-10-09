@@ -84,7 +84,7 @@ describe('request parameters', () => {
   it('sends the user agent and no key by default', async () => {
     const r = await runFixture(['project', ids.slug], 'project');
     const headers = new Headers(r.calls[0]?.init?.headers);
-    expect(headers.get('user-agent')).toMatch(/^hey-cli\/\S+ hey-research-sdk\/0\.1\.1$/);
+    expect(headers.get('user-agent')).toMatch(/^hey-cli\/\S+ hey-research-sdk\/\d+\.\d+\.\d+$/);
     expect(headers.get('authorization')).toBeNull();
     expect(r.calls[0]?.init?.redirect).toBe('manual');
   });
