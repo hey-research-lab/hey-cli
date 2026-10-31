@@ -324,9 +324,9 @@ esac
 
 ## How it relates to HEY Research Lab
 
-`hey` reads HEY's public API through the published `@hey-research-lab/sdk`. Routes the SDK 0.1.1
-does not have methods for yet (`/api/agent/research_project`, `/api/agent/unknowns`) are read
-through the SDK's public `client.get()`. The CLI computes nothing of its own: activity status,
+`hey` reads HEY's public API through the published `@hey-research-lab/sdk`. The agent routes
+(`/api/agent/research_project`, `/api/agent/unknowns`) are read through the SDK's public
+`client.get()`. The CLI computes nothing of its own: activity status,
 research level, verification and every other state are HEY's, decided by HEY's private quality
 gate and relayed with their source. Public API docs: <https://heyresearch.xyz/docs/public-api>; dated
 changes to the API, such as a field whose meaning changed: <https://heyresearch.xyz/developers/changelog>
