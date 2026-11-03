@@ -4,11 +4,16 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/).
 
-## Unreleased
+## 0.1.4 — unreleased (not yet on npm)
+
+The version is bumped so the next publish cannot be confused with what npm already holds: the
+`@hey-research-lab/cli@0.1.3` on npm was published on 2026-10-09 before the two changes below, so it
+still declares `@hey-research-lab/sdk ^0.1.1` and accepts any slug length, while this repository said
+0.1.3 for both. The npm 0.1.3 still answers every command; it is simply not this source.
 
 - A project slug is at most 80 characters, HEY's own request rule (OpenAPI, the agent contract's requests); a longer one is refused locally instead of reaching HEY for a 404.
 - Depends on `@hey-research-lab/sdk` `^0.2.0` (published 2026-10-09), which types the API's additive fields since 0.1.2; a caret on 0.x does not cross a minor, so `^0.1.1` kept the older SDK.
-- Development: vitest 4.1.11 / tsup 8.5.1, with esbuild held at ^0.28.1 by a pnpm override; clears dev-only advisories in the test and build toolchain. No runtime change.
+- Development: vitest 4.1.12 / tsup 8.5.1, with esbuild held at ^0.28.1 by a pnpm override; clears dev-only advisories in the test and build toolchain. No runtime change.
 
 ## 0.1.3 — 2026-10-09
 
