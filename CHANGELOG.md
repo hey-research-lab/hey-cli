@@ -4,7 +4,7 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/).
 
-## 0.1.4 — unreleased (not yet on npm)
+## 0.1.4 — 2026-11-03
 
 The version is bumped so the next publish cannot be confused with what npm already holds: the
 `@hey-research-lab/cli@0.1.3` on npm was published on 2026-10-09 before the two changes below, so it
