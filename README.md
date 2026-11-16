@@ -348,6 +348,8 @@ rule), reads at most 4 MiB of an answer, and refuses an answer carrying a `__pro
 stripped of control, escape, invisible and bidirectional-override characters before it reaches
 your terminal. It reads and writes no files, runs no child processes, and stores nothing.
 
+HEY Research Lab also reviews other projects' code and reports what it finds privately first: [security credits](https://github.com/hey-research-lab#security-credits).
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). `pnpm install && pnpm scan && pnpm lint && pnpm typecheck
