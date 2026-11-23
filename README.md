@@ -18,7 +18,7 @@ public endpoint, through the published [`@hey-research-lab/sdk`](https://www.npm
 
 ## Why Robinhood Chain only
 
-HEY researches one chain: Robinhood Chain, chain id `4663` (`eip155:4663`). It is implicit in
+HEY's API and this CLI answer for one chain: Robinhood Chain, chain id `4663` (`eip155:4663`). It is implicit in
 every command; there is no network, chain or RPC option. A CAIP-10 address on another chain
 (`eip155:1:0x…`), or a `--chain`/`--network` flag, is refused with `unsupported_chain` (exit 2).
 
